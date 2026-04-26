@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "muhavara": "नौ दो ग्यारह होना",
+    "actual_meaning": "To run away / Escape",
+    "story_hindi": "तुमने अभी शर्मा जी की खिड़की अपनी प्लास्टिक की गेंद से तोड़ दी है। इससे पहले कि वह डंडा लेकर बाहर आएं, तुम क्या करते हो?",
+    "story_english": "You just broke Sharma ji's window with your plastic ball. What do you do before he comes out with a stick?",
+    "options": ["आग बबूला होना", "नौ दो ग्यारह होना", "घी के दीये जलाना", "ईंट से ईंट बजाना"],
+    "answer": "नौ दो ग्यारह होना"
+  },
+  {
+    "id": 2,
+    "muhavara": "भीगी बिल्ली बनना",
+    "actual_meaning": "To be scared / act submissive",
+    "story_hindi": "तुम टीवी पर मारियो खेल रहे थे। अचानक पापा कमरे में आते हैं। तुम तुरंत टीवी बंद करके कैसे बैठ जाते हो?",
+    "story_english": "You were playing Mario. Suddenly Papa enters the room. How do you sit after turning it off?",
+    "options": ["भीगी बिल्ली बनना", "आसमान सिर पर उठाना", "हाथ मलना", "मुँह में पानी आना"],
+    "answer": "भीगी बिल्ली बनना"
+  },
+  {
+    "id": 3,
+    "muhavara": "आग बबूला होना",
+    "actual_meaning": "To be extremely angry",
+    "story_hindi": "मम्मी को पता चला कि तुमने अपनी बहन के हिस्से की मैगी भी खा ली। उनका क्या हाल होता है?",
+    "story_english": "Mummy found out you ate your sister's portion of Maggi too. What does she become?",
+    "options": ["हवा से बातें करना", "फूला न समाना", "आग बबूला होना", "हाथ-पांव फूलना"],
+    "answer": "आग बबूला होना"
+  },
+  {
+    "id": 4,
+    "muhavara": "मुँह में पानी आना",
+    "actual_meaning": "Mouth watering / temptation",
+    "story_hindi": "स्कूल के बाहर भेल-पूरी वाले अंकल चटपटा मसाला मिला रहे हैं। तुम्हारी क्या हालत होती है?",
+    "story_english": "The bhel-puri uncle outside school is mixing spicy masala. What happens to you?",
+    "options": ["मुँह ताकना", "मुँह फुलाना", "मुँह में पानी आना", "मुँह छिपाना"],
+    "answer": "मुँह में पानी आना"
+  },
+  {
+    "id": 5,
+    "muhavara": "हवा से बातें करना",
+    "actual_meaning": "To run very fast",
+    "story_hindi": "तुम्हें नई रेंजर साइकिल मिली है और तुम ढलान पर उसे चला रहे हो।",
+    "story_english": "You got a new Ranger cycle and you are riding it down the slope.",
+    "options": ["हवा से बातें करना", "हवा में उड़ना", "हाथ साफ़ करना", "हस्तक्षेप करना"],
+    "answer": "हवा से बातें करना"
+  },
+  {
+    "id": 6,
+    "muhavara": "ईद का चाँद होना",
+    "actual_meaning": "To be seen rarely",
+    "story_hindi": "तुम्हारा वह दोस्त जिसने तुमसे 50 रुपये उधार लिए थे, अब कैंटीन में नज़र ही नहीं आता।",
+    "story_english": "The friend who borrowed 50 rupees from you is never seen in the canteen anymore.",
+    "options": ["ईद का चाँद होना", "आँख का तारा", "हाथ पर हाथ धरे बैठना", "गले का हार"],
+    "answer": "ईद का चाँद होना"
+  },
+  {
+    "id": 7,
+    "muhavara": "दाँत खट्टे करना",
+    "actual_meaning": "To defeat completely",
+    "story_hindi": "गली क्रिकेट के फाइनल मैच में तुम्हारी टीम ने दूसरी टीम को 20 रन से हरा दिया।",
+    "story_english": "In the gully cricket finals, your team defeated the opponent by 20 runs.",
+    "options": ["दाँत खट्टे करना", "दाँतों तले उंगली दबाना", "दाल में काला होना", "उल्लू सीधा करना"],
+    "answer": "दाँत खट्टे करना"
+  },
+  {
+    "id": 8,
+    "muhavara": "आसमान सिर पर उठाना",
+    "actual_meaning": "To make a lot of noise",
+    "story_hindi": "जब टीचर کلاس में नहीं होती, तो पीछे बैठने वाले बच्चे क्या करते हैं?",
+    "story_english": "When the teacher is not in class, what do the backbenchers do?",
+    "options": ["आसमान सिर पर उठाना", "पापड़ बेलना", "घोड़े बेचकर सोना", "राई का पहाड़ बनाना"],
+    "answer": "आसमान सिर पर उठाना"
+  },
+  {
+    "id": 9,
+    "muhavara": "घोड़े बेचकर सोना",
+    "actual_meaning": "To sleep soundly / carefree",
+    "story_hindi": "बोर्ड के एग्जाम खत्म होने के बाद वाले दिन तुम सुबह 11 बजे तक कैसे सोते हो?",
+    "story_english": "The day after your board exams end, how do you sleep till 11 AM?",
+    "options": ["उल्लू सीधा करना", "घोड़े बेचकर सोना", "आँखें बिछाना", "हाथ पर हाथ धरे बैठना"],
+    "answer": "घोड़े बेचकर सोना"
+  },
+  {
+    "id": 10,
+    "muhavara": "घी के दीये जलाना",
+    "actual_meaning": "To celebrate",
+    "story_hindi": "जब तुम्हें पता चलता है कि कल से भारी बारिश के कारण स्कूल की छुट्टियां हैं।",
+    "story_english": "When you find out tomorrow is a holiday due to heavy rain.",
+    "options": ["घी के दीये जलाना", "हाथ मलना", "मुँह फुलाना", "आस्तीन का साँप"],
+    "answer": "घी के दीये जलाना"
+  },
+  {
+    "id": 11,
+    "muhavara": "आस्तीन का साँप",
+    "actual_meaning": "A hidden enemy",
+    "story_hindi": "वह दोस्त जो कहता था 'मैंने कुछ नहीं पढ़ा' और टेस्ट में फुल मार्क्स ले आया।",
+    "story_english": "The friend who said 'I studied nothing' but gets full marks in the test.",
+    "options": ["आस्तीन का साँप", "आँख का तारा", "गले का हार", "ईद का चाँद"],
+    "answer": "आस्तीन का साँप"
+  },
+  {
+    "id": 12,
+    "muhavara": "दाँतों तले उंगली दबाना",
+    "actual_meaning": "To be surprised",
+    "story_hindi": "जब स्कूल का सबसे शांत बच्चा एनुअल फंक्शन में ज़बरदस्त डांस करता है।",
+    "story_english": "When the quietest kid in school does a fantastic dance at the annual function.",
+    "options": ["दाँतों तले उंगली दबाना", "दाँत खट्टे करना", "मुँह फुलाना", "हाथ पैर मारना"],
+    "answer": "दाँतों तले उंगली दबाना"
+  },
+  {
+    "id": 13,
+    "muhavara": "हाथ मलना",
+    "actual_meaning": "To regret",
+    "story_hindi": "क्लास में समोसे बँट रहे थे लेकिन तुम वाशरूम गए हुए थे और वापस आने तक सब खत्म हो गए।",
+    "story_english": "Samosas were distributed in class, but you were in the washroom and when you returned they were all gone.",
+    "options": ["हाथ मलना", "हाथ साफ़ करना", "गले पड़ना", "तलवे चाटना"],
+    "answer": "हाथ मलना"
+  },
+  {
+    "id": 14,
+    "muhavara": "पापड़ बेलना",
+    "actual_meaning": "To face difficulties / work hard",
+    "story_hindi": "पीटी (PT) वाले सर से अपनी जब्त की हुई कॉमिक कलेक्ट करने के लिए तुम्हें क्या करना पड़ा?",
+    "story_english": "What did you have to go through to get your confiscated comic book back from the PT sir?",
+    "options": ["घोड़े बेचकर सोना", "पापड़ बेलना", "हवा में उड़ना", "छक्के छुड़ाना"],
+    "answer": "पापड़ बेलना"
+  },
+  {
+    "id": 15,
+    "muhavara": "उल्लू सीधा करना",
+    "actual_meaning": "To get one's own selfish work done",
+    "story_hindi": "अमन सिर्फ तब तुमसे बात करता है जब उसे होमवर्क कॉपी करना होता है। वह अपना...",
+    "story_english": "Aman only talks to you when he needs to copy homework. He only...",
+    "options": ["उल्लू सीधा करना", "हवा से बातें करना", "नाक में दम करना", "आँखें बिछाना"],
+    "answer": "उल्लू सीधा करना"
+  },
+  {
+    "id": 16,
+    "muhavara": "हाथ साफ़ करना",
+    "actual_meaning": "To steal",
+    "story_hindi": "तुमने अपनी पेन्सिल बॉक्स में नया रबर रखा था, पर लंच के बाद किसी ने उस पर...",
+    "story_english": "You put a new eraser in your pencil box, but after lunch someone...",
+    "options": ["हाथ साफ़ करना", "हाथ मलना", "मुँह छिपाना", "मुंह में पानी आना"],
+    "answer": "हाथ साफ़ करना"
+  },
+  {
+    "id": 17,
+    "muhavara": "दाल में काला होना",
+    "actual_meaning": "Something is suspicious",
+    "story_hindi": "जब मम्मी तुम्हें अचानक बिना मांगे 100 रुपये दे दें और बहुत प्यार से बात करें।",
+    "story_english": "When Mummy suddenly gives you 100 rupees out of nowhere and talks very softly.",
+    "options": ["दाल में काला होना", "घी के दीये जलाना", "पापड़ बेलना", "मुँह फुलाना"],
+    "answer": "दाल में काला होना"
+  },
+  {
+    "id": 18,
+    "muhavara": "नाक में दम करना",
+    "actual_meaning": "To irritate excessively",
+    "story_hindi": "पड़ोस वाले शर्मा आंटी के बच्चे जब तुम्हारे घर आते हैं, तो तुम्हारी क्या हालत करते हैं?",
+    "story_english": "When the neighbor Sharma aunty's kids come to your house, what do they do to you?",
+    "options": ["हवा से बातें करना", "नाक में दम करना", "आँख का तारा होना", "ईद का चाँद होना"],
+    "answer": "नाक में दम करना"
+  },
+  {
+    "id": 19,
+    "muhavara": "फूला न समाना",
+    "actual_meaning": "To be overjoyed",
+    "story_hindi": "जब तुम्हें पता चलता है कि तुम्हारे पास वीडियो गेम खेलने के लिए पूरा हफ्ता है।",
+    "story_english": "When you realize you have an entire week off to play video games.",
+    "options": ["फूला न समाना", "आग बबूला होना", "हाथ मलना", "भीगी बिल्ली बनना"],
+    "answer": "फूला न समाना"
+  },
+  {
+    "id": 20,
+    "muhavara": "आँख का तारा",
+    "actual_meaning": "Very dear",
+    "story_hindi": "क्लास का वह बच्चा जो हमेशा फर्स्ट आता है और टीचर्स का फेवरेट है।",
+    "story_english": "The kid in class who always stands first and is every teacher's favorite.",
+    "options": ["आस्तीन का साँप", "आँख का तारा", "ईद का चाँद", "गले की हड्डी"],
+    "answer": "आँख का तारा"
+  },
+  {
+    "id": 21,
+    "muhavara": "राई का पहाड़ बनाना",
+    "actual_meaning": "To make a big issue of a small thing",
+    "story_hindi": "तुम्हारे पेन की थोड़ी सी स्याही दोस्त के शर्ट पर लग गई और उसने पूरा स्कूल सिर पर उठा लिया।",
+    "story_english": "A tiny drop of your pen's ink fell on your friend's shirt and he made a huge fuss.",
+    "options": ["राई का पहाड़ बनाना", "दाँत खट्टे करना", "घाव पर नमक छिड़कना", "हवा में तीर मारना"],
+    "answer": "राई का पहाड़ बनाना"
+  },
+  {
+    "id": 22,
+    "muhavara": "छक्के छुड़ाना",
+    "actual_meaning": "To give a crushing defeat",
+    "story_hindi": "मैथ्स के टेस्ट में जो सवाल आए थे, उन्होंने पूरी क्लास के...",
+    "story_english": "The questions in the unexpected Maths test did what to the whole class?",
+    "options": ["छक्के छुड़ाना", "घी के दीये जलाना", "हाथ पर हाथ धरे बैठना", "आँखें खुलना"],
+    "answer": "छक्के छुड़ाना"
+  },
+  {
+    "id": 23,
+    "muhavara": "आँखें खुलना",
+    "actual_meaning": "To realize the truth / Wake up to reality",
+    "story_hindi": "जब प्री-बोर्ड में सिर्फ 40% मार्क्स आए, तब जाकर तुम्हारी...",
+    "story_english": "When you got only 40% in pre-boards, finally your...",
+    "options": ["हवा से बातें करना", "आँखें खुलना", "हाथ साफ़ करना", "तलवे चाटना"],
+    "answer": "आँखें खुलना"
+  },
+  {
+    "id": 24,
+    "muhavara": "तारे तोड़ लाना",
+    "actual_meaning": "To achieve something impossible",
+    "story_hindi": "तुमने अपने पापा से कहा कि तुम हिस्ट्री में फुल स्कूल टॉप करोगे। पापा कहते हैं तुम...",
+    "story_english": "You told your dad you will top the entire school in History. Dad says that would be like...",
+    "options": ["तारे तोड़ लाना", "आसमान सिर पर उठाना", "दाल में काला होना", "राई का पहाड़ बनाना"],
+    "answer": "तारे तोड़ लाना"
+  },
+  {
+    "id": 25,
+    "muhavara": "आसमान से गिरा खजूर में अटका",
+    "actual_meaning": "From one trouble to another",
+    "story_hindi": "तुम मैथ्स की क्लास बंक करके लाइब्रेरी गए, पर वहां प्रिंसिपल मिल गए!",
+    "story_english": "You bunked the Maths class to hide in the library, but you found the Principal there!",
+    "options": ["आसमान से गिरा खजूर में अटका", "ऊँट के मुँह में ज़ीरा", "मुँह में पानी आना", "हवा में तीर मारना"],
+    "answer": "आसमान से गिरा खजूर में अटका"
+  },
+  {
+    "id": 26,
+    "muhavara": "ऊंट के मुँह में ज़ीरा",
+    "actual_meaning": "Very insufficient quantity for a big need",
+    "story_hindi": "तुम पूरे दिन भूखे थे और तुम्हारे दोस्त ने तुम्हें सिर्फ एक चिप्स का टुकड़ा दिया।",
+    "story_english": "You were starving all day and your friend gave you just one single chip to eat.",
+    "options": ["ऊँट के मुँह में ज़ीरा", "दाल में काला होना", "घी के दीये जलाना", "पापड़ बेलना"],
+    "answer": "ऊंट के मुँह में ज़ीरा"
+  },
+  {
+    "id": 27,
+    "muhavara": "घाव पर नमक छिड़कना",
+    "actual_meaning": "To add insult to injury",
+    "story_hindi": "टेस्ट में फेल होने के बाद तुम्हारे भाई ने गाना चलाया 'तू तो गया'।",
+    "story_english": "After you failed the test, your brother started playing the song 'You are finished'.",
+    "options": ["घाव पर नमक छिड़कना", "कान भरना", "आँखें बिछाना", "तलवे चाटना"],
+    "answer": "घाव पर नमक छिड़कना"
+  },
+  {
+    "id": 28,
+    "muhavara": "कान भरना",
+    "actual_meaning": "To poison someone's mind",
+    "story_hindi": "पड़ोस की आंटी तुम्हारी मम्मी से तुम्हारे खिलाफ क्या कर रही हैं?",
+    "story_english": "What is the neighborhood aunty doing to your mother against you?",
+    "options": ["कान भरना", "नाक में दम करना", "हाथ मलना", "हस्तक्षेप करना"],
+    "answer": "कान भरना"
+  },
+  {
+    "id": 29,
+    "muhavara": "आँखें बिछाना",
+    "actual_meaning": "To welcome eagerly",
+    "story_hindi": "गर्मी की छुट्टियों में हम अपने कज़िन के आने का कैसे इंतज़ार करते हैं?",
+    "story_english": "How do we wait for our cousins to arrive during the summer holidays?",
+    "options": ["आँखें बिछाना", "ताल ठोकना", "आँख दिखाना", "मुँह फुलाना"],
+    "answer": "आँखें बिछाना"
+  },
+  {
+    "id": 30,
+    "muhavara": "मुँह फुलाना",
+    "actual_meaning": "To sulk / be upset",
+    "story_hindi": "जब तुम्हें टीवी का रिमोट नहीं मिलता तो तुम कोने में जाकर क्या करते हो?",
+    "story_english": "When you don't get the TV remote, what do you do sitting in the corner?",
+    "options": ["मुँह फुलाना", "मुँह छिपाना", "मुँह ताकना", "दाँत खट्टे करना"],
+    "answer": "मुँह फुलाना"
+  },
+  {
+    "id": 31,
+    "muhavara": "हवा में तीर मारना",
+    "actual_meaning": "To make wild guesses",
+    "story_hindi": "MCQ एग्जाम में जब तुम्हें कोई आंसर नहीं आता, तो तुम अक्कड़-बक्कड़ करके...",
+    "story_english": "In the MCQ exam when you don't know the answer, you do inky-pinky-ponky and...",
+    "options": ["हवा में तीर मारना", "हवा से बातें करना", "हवा में उड़ना", "उल्लू सीधा करना"],
+    "answer": "हवा में तीर मारना"
+  },
+  {
+    "id": 32,
+    "muhavara": "गले पड़ना",
+    "actual_meaning": "To be a forced burden",
+    "story_hindi": "तुम खेलने जा रहे थे और मम्मी ने कहा कि छोटे भाई को भी साथ ले जाओ।",
+    "story_english": "You were going out to play and Mummy said take your little brother along too.",
+    "options": ["गले पड़ना", "गले का हार", "हाथ साफ़ करना", "हस्तक्षेप करना"],
+    "answer": "गले पड़ना"
+  },
+  {
+    "id": 33,
+    "muhavara": "ताल ठोकना",
+    "actual_meaning": "To challenge for a fight",
+    "story_hindi": "डब्लूडब्लूई (WWE) देखकर अगले दिन स्कूल में तुम्हारे दोस्त ने तुम्हें...",
+    "story_english": "After watching WWE, next day in school your friend did what to you?",
+    "options": ["ताल ठोकना", "छक्के छुड़ाना", "हाथ पैर मारना", "नाक में दम करना"],
+    "answer": "ताल ठोकना"
+  },
+  {
+    "id": 34,
+    "muhavara": "हाथ पैर मारना",
+    "actual_meaning": "To struggle / make desperate efforts",
+    "story_hindi": "एग्जाम से एक रात पहले सिलेबस खत्म करने के लिए तुम बहुत...",
+    "story_english": "To finish the entire syllabus the night before the exam, you were really...",
+    "options": ["हाथ पैर मारना", "घोड़े बेचकर सोना", "हाथ पर हाथ धरे बैठना", "घी के दीये जलाना"],
+    "answer": "हाथ पैर मारना"
+  },
+  {
+    "id": 35,
+    "muhavara": "हाथ पर हाथ धरे बैठना",
+    "actual_meaning": "To sit doing nothing",
+    "story_hindi": "प्रोजेक्ट जमा करने की लास्ट डेट है और तुम्हारा दोस्त अभी तक...",
+    "story_english": "It's the assignment submission date and your friend is still...",
+    "options": ["हाथ पर हाथ धरे बैठना", "पापड़ बेलना", "हवा में तीर मारना", "रायता फैलाना"],
+    "answer": "हाथ पर हाथ धरे बैठना"
+  },
+  {
+    "id": 36,
+    "muhavara": "रायता फैलाना",
+    "actual_meaning": "To create a mess",
+    "story_hindi": "तुमने किचन में खुद सैंडविच बनाने की कोशिश की और पूरी जगह...",
+    "story_english": "You tried to make a sandwich yourself in the kitchen and completely...",
+    "options": ["रायता फैलाना", "राई का पहाड़ बनाना", "आसमान सिर पर उठाना", "दाल में काला होना"],
+    "answer": "रायता फैलाना"
+  },
+  {
+    "id": 37,
+    "muhavara": "दिन दूनी रात चौगुनी तरक्की करना",
+    "actual_meaning": "To progress rapidly",
+    "story_hindi": "स्कूल छोड़ते ही तुम्हारे दोस्त का यूट्यूब चैनल एकदम वायरल हो गया।",
+    "story_english": "Right after leaving school, your friend's YouTube channel went totally viral. He is...",
+    "options": ["दिन दूनी रात चौगुनी तरक्की करना", "हाथ मलना", "हवा से बातें करना", "फूला न समाना"],
+    "answer": "दिन दूनी रात चौगुनी तरक्की करना"
+  },
+  {
+    "id": 38,
+    "muhavara": "लोहे के चने चबाना",
+    "actual_meaning": "To do a very difficult task",
+    "story_hindi": "संस्कृत का निबंध याद करना मेरे लिए कैसा था?",
+    "story_english": "Memorizing the Sanskrit essay was like what for me?",
+    "options": ["लोहे के चने चबाना", "पापड़ बेलना", "तारे तोड़ लाना", "हाथ पैर मारना"],
+    "answer": "लोहे के चने चबाना"
+  },
+  {
+    "id": 39,
+    "muhavara": "बंदर क्या जाने अदरक का स्वाद",
+    "actual_meaning": "One who doesn't know the value of something good",
+    "story_hindi": "मैंने उसे अपना पसंदीदा कैसेट दिया पर उसने उसे फेंक दिया। उसके लिए तो...",
+    "story_english": "I gave him my favorite cassette tape but he threw it away. For him it's like...",
+    "options": ["बंदर क्या जाने अदरक का स्वाद", "ऊँट के मुँह में ज़ीरा", "आस्तीन का साँप", "राई का पहाड़"],
+    "answer": "बंदर क्या जाने अदरक का स्वाद"
+  },
+  {
+    "id": 40,
+    "muhavara": "जिसकी लाठी उसकी भैंस",
+    "actual_meaning": "Might is right",
+    "story_hindi": "स्कूल का मॉनिटर अपनी मर्जी से किसी का भी नाम ब्लैकबोर्ड पर लिख देता था क्योंकि...",
+    "story_english": "The class monitor would write anyone's name on the blackboard because...",
+    "options": ["जिसकी लाठी उसकी भैंस", "दाल में काला होना", "हाथ साफ़ करना", "हवा में उड़ना"],
+    "answer": "जिसकी लाठी उसकी भैंस"
+  },
+  {
+    "id": 41,
+    "muhavara": "हाथ कंगन को आरसी क्या",
+    "actual_meaning": "Evidence needs no proof",
+    "story_hindi": "तुमने कहा तुम सबसे तेज़ दौड़ते हो और रेस में सबको हरा दिया, यानी...",
+    "story_english": "You claimed you run the fastest and defeated everyone in the race, which means...",
+    "options": ["हाथ कंगन को आरसी क्या", "ऊँट के मुँह में ज़ीरा", "घोड़े बेचकर सोना", "दाँत खट्टे करना"],
+    "answer": "हाथ कंगन को आरसी क्या"
+  },
+  {
+    "id": 42,
+    "muhavara": "नाच न जाने आँगन टेढ़ा",
+    "actual_meaning": "Blaming circumstances for one's own incompetence",
+    "story_hindi": "दोस्त वीडियो गेम हार गया और कहने लगा 'तेरा कंट्रोलर खराब है'!",
+    "story_english": "Friend lost the video game and claimed 'Your controller is broken'!",
+    "options": ["नाच न जाने आँगन टेढ़ा", "राई का पहाड़ बनाना", "बंदर क्या जाने अदरक का स्वाद", "घी के दीये जलाना"],
+    "answer": "नाच न जाने आँगन टेढ़ा"
+  },
+  {
+    "id": 43,
+    "muhavara": "एक अनार सौ बीमार",
+    "actual_meaning": "Single thing, many demanders",
+    "story_hindi": "कैंटीन में सिर्फ एक समोसा बचा था और पांच लड़के उसे मांग रहे थे।",
+    "story_english": "Only one samosa was left in the canteen and five boys were fighting for it.",
+    "options": ["एक अनार सौ बीमार", "ऊँट के मुँह में ज़ीरा", "आसमान से गिरा", "दाल में काला होना"],
+    "answer": "एक अनार सौ बीमार"
+  },
+  {
+    "id": 44,
+    "muhavara": "काला अक्षर भैंस बराबर",
+    "actual_meaning": "Completely illiterate",
+    "story_hindi": "जब तुम्हारे दादाजी ने नया स्मार्टफोन देखा और बोले 'मुझे कुछ समझ नहीं आता, मेरे लिए तो...'",
+    "story_english": "When your grandpa saw a new smartphone and said 'I don't understand this, for me it is...'",
+    "options": ["काला अक्षर भैंस बराबर", "नाच न जाने आँगन टेढ़ा", "लोहे के चने चबाना", "आँखें खुलना"],
+    "answer": "काला अक्षर भैंस बराबर"
+  },
+  {
+    "id": 45,
+    "muhavara": "आँख बचाना",
+    "actual_meaning": "To avoid being seen",
+    "story_hindi": "तुमने होमवर्क नहीं किया था, इसलिए तुम टीचर से पूरे दिन क्या करते रहे?",
+    "story_english": "You hadn't done your homework, so what were you trying to do to avoid the teacher?",
+    "options": ["आँख बचाना", "आँखें बिछाना", "मुँह छिपाना", "मुँह फुलाना"],
+    "answer": "आँख बचाना"
+  },
+  {
+    "id": 46,
+    "muhavara": "मुँह छिपाना",
+    "actual_meaning": "To feel ashamed / hide out of shame",
+    "story_hindi": "जब तुम स्टेज पर पोयम भूल गए, तो पर्दे के पीछे भागकर तुमने...",
+    "story_english": "When you forgot the poem on stage, you ran behind the curtains and started...",
+    "options": ["मुँह छिपाना", "मुँह ताकना", "मुँह फुलाना", "मुँह की खाना"],
+    "answer": "मुँह छिपाना"
+  },
+  {
+    "id": 47,
+    "muhavara": "मुँह की खाना",
+    "actual_meaning": "To suffer a humiliating defeat",
+    "story_hindi": "पड़ोस की टीम बहुत अकड़ रही थी, पर मैच में उन्होंने बुरी तरह से...",
+    "story_english": "The neighborhood team was very arrogant, but in the match they completely...",
+    "options": ["मुँह की खाना", "दाँत खट्टे करना", "हवा में तीर मारना", "रायता फैलाना"],
+    "answer": "मुँह की खाना"
+  },
+  {
+    "id": 48,
+    "muhavara": "कान पर जूँ न रेंगना",
+    "actual_meaning": "To pay absolutely no heed",
+    "story_hindi": "मम्मी ने तुम्हें 10 बार कहा कि कमरा साफ़ करो, पर तुम्हारे...",
+    "story_english": "Mummy told you 10 times to clean your room, but you paid no attention at all.",
+    "options": ["कान पर जूँ न रेंगना", "कान भरना", "आसमान सिर पर उठाना", "हाथ पर हाथ धरे बैठना"],
+    "answer": "कान पर जूँ न रेंगना"
+  },
+  {
+    "id": 49,
+    "muhavara": "सिर मुंडाते ही ओले पड़ना",
+    "actual_meaning": "Misfortune at the very beginning of a task",
+    "story_hindi": "तुमने नई शर्ट पहली बार पहनी और बाहर निकलते ही उस पर एक पक्षी ने बीट कर दी!",
+    "story_english": "You wore a new shirt for the first time and a bird pooped on it right when you stepped out!",
+    "options": ["सिर मुंडाते ही ओले पड़ना", "आसमान से गिरा खजूर में अटका", "दाल में काला होना", "घाव पर नमक छिड़कना"],
+    "answer": "सिर मुंडाते ही ओले पड़ना"
+  },
+  {
+    "id": 50,
+    "muhavara": "ईंट से ईंट बजाना",
+    "actual_meaning": "To destroy completely",
+    "story_hindi": "सुपरहीरो मूवी में हीरो ने विलेन के पूरे अड्डे की...",
+    "story_english": "In the superhero movie, the hero completely destroyed the villain's hideout by...",
+    "options": ["ईंट से ईंट बजाना", "राई का पहाड़ बनाना", "रायता फैलाना", "आग बबूला होना"],
+    "answer": "ईंट से ईंट बजाना"
+  }
+]
