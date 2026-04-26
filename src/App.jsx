@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useFocusPenalty } from './hooks/useFocusPenalty';
 import data1 from './data/level1_5.json';
 import data2 from './data/level6_10.json';
@@ -68,8 +68,11 @@ function App() {
     if (savedLives) setCarriedBonusLives(parseInt(savedLives));
   }, []);
 
+  const popupSuspend = useRef(false);
+
   // Hook handles visibility drop
   useFocusPenalty(() => {
+    if (popupSuspend.current) return;
     if (gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.BONUS) {
       setGameState(GAME_STATE.PENALTY);
       setHearts(prev => Math.max(0, prev - 1));
@@ -77,6 +80,25 @@ function App() {
   });
 
   const goLevelMap = () => setGameState(GAME_STATE.LEVEL_MAP);
+
+  const resetProgress = () => {
+    if (window.confirm("Are you sure you want to erase all progress and start over from Level 1?")) {
+      localStorage.removeItem('muhavara_unlocked_level');
+      localStorage.removeItem('muhavara_bonus_lives');
+      setUnlockedLevel(1);
+      setCarriedBonusLives(0);
+    }
+  };
+
+  const quitToMap = () => {
+    popupSuspend.current = true;
+    const answer = window.confirm("Quit to the campaign map? Your progress in this level will be lost!");
+    setTimeout(() => { popupSuspend.current = false; }, 300);
+
+    if (answer) {
+      goLevelMap();
+    }
+  };
 
   const startLevel = (levelId) => {
     const lvl = ALL_LEVELS.find(l => l.levelId === levelId);
@@ -222,15 +244,22 @@ function App() {
     <div className="app-container">
       {/* Universal Header */}
       {(gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.BONUS || gameState === GAME_STATE.PENALTY) && (
-        <header className="header">
-          <div className="hearts">
-            {/* Compute initial hearts based on what we started the level with (3 base + carried bonus) */}
-            {Array.from({ length: Math.max(3, hearts) }).map((_, i) => (
-              <span key={i} style={{ opacity: i < hearts ? 1 : 0.3 }}>{i >= 3 ? '⭐' : '❤️'}</span>
-            ))}
+        <header className="header" style={{ alignItems: 'flex-start' }}>
+          <div>
+            <div className="hearts" style={{ marginBottom: '8px' }}>
+              {/* Compute initial hearts based on what we started the level with (3 base + carried bonus) */}
+              {Array.from({ length: Math.max(3, hearts) }).map((_, i) => (
+                <span key={i} style={{ opacity: i < hearts ? 1 : 0.3 }}>{i >= 3 ? '⭐' : '❤️'}</span>
+              ))}
+            </div>
+            <div style={{ display: 'flex', gap: '16px' }}>
+              <button onClick={quitToMap} style={{ background: 'transparent', color: 'var(--text-muted)', border: 'none', textDecoration: 'underline', cursor: 'pointer', fontSize: '14px', padding: 0 }}>
+                🔙 Back to Map
+              </button>
+            </div>
           </div>
-          <div className="score">
-            {gameState === GAME_STATE.PLAYING && `Correct: ${correctCount}/10`}
+          <div className="score" style={{ textAlign: 'right' }}>
+            {gameState === GAME_STATE.PLAYING && `Correct: ${correctCount}/10`}<br/>
             {gameState === GAME_STATE.BONUS && `Bonus Lives: ${bonusLivesWon}`}
           </div>
         </header>
@@ -245,6 +274,11 @@ function App() {
           <button className="play-btn" onClick={goLevelMap}>
             {unlockedLevel > 1 ? "Continue Journey" : "Start Journey"}
           </button>
+          {unlockedLevel > 1 && (
+            <button onClick={resetProgress} style={{ marginTop: '32px', background: 'transparent', color: 'var(--danger-color)', border: 'none', textDecoration: 'underline', cursor: 'pointer', fontSize: '15px' }}>
+              Reset Campaign Progress
+            </button>
+          )}
         </div>
       )}
 
