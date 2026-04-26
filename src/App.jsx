@@ -274,11 +274,9 @@ function App() {
           <button className="play-btn" onClick={goLevelMap}>
             {unlockedLevel > 1 ? "Continue Journey" : "Start Journey"}
           </button>
-          {unlockedLevel > 1 && (
-            <button onClick={resetProgress} style={{ marginTop: '32px', background: 'transparent', color: 'var(--danger-color)', border: 'none', textDecoration: 'underline', cursor: 'pointer', fontSize: '15px' }}>
-              Reset Campaign Progress
-            </button>
-          )}
+          <button onClick={resetProgress} style={{ marginTop: '32px', background: 'transparent', color: 'var(--danger-color)', border: 'none', textDecoration: 'underline', cursor: 'pointer', fontSize: '15px' }}>
+            Reset Campaign Progress
+          </button>
         </div>
       )}
 
@@ -315,7 +313,7 @@ function App() {
       {/* Interrupts & Overlays */}
       {gameState === GAME_STATE.PENALTY && (
         <div className="overlay-screen">
-          <div className="chappal-animation">🩴</div>
+          <div className="emoji-giant">🤦</div>
           <h2 className="overlay-title text-danger">FOCUS LOST!</h2>
           <p className="overlay-desc">Mummy caught you looking away! You lost a heart.</p>
           <button className="action-btn" onClick={() => {
