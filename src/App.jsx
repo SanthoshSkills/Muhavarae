@@ -1,5 +1,4 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
-import { useFocusPenalty } from './hooks/useFocusPenalty';
 import data1 from './data/level1_5.json';
 import data2 from './data/level6_10.json';
 import './App.css';
@@ -35,32 +34,71 @@ const speakHindi = (text) => {
   window.speechSynthesis.speak(utterance);
 };
 
-const PENALTY_SENTENCES = [
-  "पकड़े गए! नजर हटी, दुर्घटना घटी!",
-  "अरे ओ! कहाँ भाग रहे हो?",
-  "मम्मी देख रही हैं! पढ़ाई पर ध्यान दो!",
-  "चीटिंग करना बुरी बात है, बेटा!",
-  "कहाँ चले? मुहावरे अभी खत्म नहीं हुए!",
-  "इधर-उधर मत देखो, फोकस करो!",
-  "लगता है किसी ने खिड़की के बाहर देख लिया!",
-  "अरे! गेम छोड़ कर सोशल मीडिया पर?",
-  "वापस आओ! लेवल पूरा करना है!",
-  "शातिर मत बनो, मुझे सब पता है!",
-  "ओहो! ध्यान भटक गया?",
-  "गूगल पर जवाब ढूँढने गए क्या?",
-  "जल्दी वापस आओ, मम्मी आने वाली हैं!",
-  "हार मान ली क्या? वापस आओ!",
-  "इतनी जल्दी थक गए? अभी तो बहुत बाकी है!"
+const PENALTY_PAIRS = [
+  ["पकड़े गए! नजर हटी, दुर्घटना घटी!", "Caught you! Eyes off, safety off!"],
+  ["अरे ओ! कहाँ भाग रहे हो?", "Hey! Where are you running?"],
+  ["मम्मी देख रही हैं! पढ़ाई पर ध्यान दो!", "Mummy is watching! Focus on your study!"],
+  ["चीटिंग करना बुरी बात है, बेटा!", "Cheating is a bad habit, son!"],
+  ["कहाँ चले? मुहावरे अभी खत्म नहीं हुए!", "Where to? The idioms are not finished yet!"],
+  ["इधर-उधर मत देखो, फोकस करो!", "Don't look around, stay focused!"],
+  ["लगता है किसी ने खिड़की के बाहर देख लिया!", "Looks like someone peeked out the window!"],
+  ["अरे! गेम छोड़ कर सोशल मीडिया पर?", "Hey! Leaving the game for social media?"],
+  ["वापस आओ! लेवल पूरा करना है!", "Come back! You need to finish the level!"],
+  ["शातिर मत बनो, मुझे सब पता है!", "Don't be clever, I know everything!"],
+  ["ओहो! ध्यान भटक गया?", "Oho! Lost your focus?"],
+  ["गूगल पर जवाब ढूँढने गए क्या?", "Did you go to Google for the answer?"],
+  ["जल्दी वापस आओ, मम्मी आने वाली हैं!", "Come back fast, Mummy is coming!"],
+  ["हार मान ली क्या? वापस आओ!", "Giving up already? Come back!"],
+  ["इतनी जल्दी थक गए? अभी तो बहुत बाकी है!", "Tired so soon? There is much left!"]
 ];
 
-const speakPenalty = () => {
+const RETURN_PAIRS = [
+  ["पकड़े गए! अब चुप-चाप यहाँ बैठो और खेलो!", "Caught! Now sit here and play quietly!"],
+  ["आखिर लौट ही आये! मम्मी को सब पता है!", "Back at last! Mummy knows everything!"],
+  ["कहाँ सैर सपाटा करने गए थे? वापस फोकस करो!", "Where were you wandering? Focus back!"],
+  ["शर्म नहीं आती? बीच में छोड़ के भाग गए!", "No shame? You ran away in the middle!"],
+  ["देख लो, मैंने सब रिकॉर्ड कर लिया है!", "Look, I have recorded everything!"],
+  ["वापस आ गए? चलो, अब जवाब दो!", "Back now? Come on, give the answer!"],
+  ["ज्यादा चालाक मत बनो, मेरी नजर तुम पर है!", "Don't be too smart, I'm watching you!"],
+  ["अरे, आप यहीं हैं? मुझे लगा कहीं और निकल गए!", "Oh, you are here? I thought you were gone!"],
+  ["मम्मी आ रही हैं, जल्दी से अपना स्कोर बढ़ाओ!", "Mummy is coming, raise your score quickly!"],
+  ["वापस आने के लिए शुक्रिया, लेकिन अगली बार मत जाना!", "Thanks for coming back, but don't leave next time!"]
+];
+
+const playPenaltyBuzzer = () => {
+  try {
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    const oscillator = audioCtx.createOscillator();
+    const gainNode = audioCtx.createGain();
+    oscillator.type = 'sawtooth';
+    oscillator.frequency.setValueAtTime(100, audioCtx.currentTime); 
+    oscillator.frequency.exponentialRampToValueAtTime(20, audioCtx.currentTime + 0.8);
+    gainNode.gain.setValueAtTime(1.0, audioCtx.currentTime);
+    gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.8);
+    oscillator.connect(gainNode);
+    gainNode.connect(audioCtx.destination);
+    oscillator.start();
+    oscillator.stop(audioCtx.currentTime + 0.8);
+  } catch (e) { console.warn(e); }
+};
+
+const speakSentence = (isReturn = false) => {
   if (!window.speechSynthesis) return;
   window.speechSynthesis.cancel();
-  const randomMsg = PENALTY_SENTENCES[Math.floor(Math.random() * PENALTY_SENTENCES.length)];
-  const utterance = new SpeechSynthesisUtterance(randomMsg);
-  utterance.lang = 'hi-IN';
+  
+  if (!isReturn) playPenaltyBuzzer();
+
+  const voices = window.speechSynthesis.getVoices();
+  const hasHindi = voices.some(v => v.lang.toLowerCase().includes('hi'));
+  
+  const pairList = isReturn ? RETURN_PAIRS : PENALTY_PAIRS;
+  const pair = pairList[Math.floor(Math.random() * pairList.length)];
+  
+  const msg = hasHindi ? pair[0] : pair[1];
+  const utterance = new SpeechSynthesisUtterance(msg);
+  utterance.lang = hasHindi ? 'hi-IN' : 'en-US';
   utterance.rate = 1.0;
-  // Maximum possible volume setting for the speech engine
   utterance.volume = 1.0; 
   window.speechSynthesis.speak(utterance);
 };
@@ -70,7 +108,9 @@ function App() {
   const [unlockedLevel, setUnlockedLevel] = useState(1);
   const [carriedBonusLives, setCarriedBonusLives] = useState(0);
 
-  // Active level state
+  const stateRef = useRef(gameState);
+  useEffect(() => { stateRef.current = gameState; }, [gameState]);
+
   const [currentLevelObj, setCurrentLevelObj] = useState(null);
   const [qIndex, setQIndex] = useState(0);
   const [hearts, setHearts] = useState(3);
@@ -80,7 +120,6 @@ function App() {
   const [selectedOption, setSelectedOption] = useState(null);
   const [showEnglish, setShowEnglish] = useState(false);
 
-  // Safe Top-Level Hook for shuffling to prevent React conditional render crashes
   const isPlayingOrBonus = gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.BONUS;
   const activeQuestionList = isPlayingOrBonus ? (gameState === GAME_STATE.BONUS ? currentLevelObj?.bonus : currentLevelObj?.regular) : null;
   const currentData = activeQuestionList ? activeQuestionList[qIndex] : null;
@@ -90,7 +129,6 @@ function App() {
     return shuffleArray(currentData.options);
   }, [currentData]);
 
-  // Load from localStorage on mount
   useEffect(() => {
     const savedLevel = localStorage.getItem('muhavara_unlocked_level');
     const savedLives = localStorage.getItem('muhavara_bonus_lives');
@@ -99,19 +137,85 @@ function App() {
   }, []);
 
   const popupSuspend = useRef(false);
+  const isCurrentlyFocused = useRef(true);
 
-  // Hook handles visibility drop
-  useFocusPenalty(() => {
-    if (popupSuspend.current) return;
+  // Visibility and Focus tracking
+  useEffect(() => {
+    const triggerLost = (reason) => {
+      if (!isCurrentlyFocused.current) return;
+      isCurrentlyFocused.current = false;
+      
+      if (popupSuspend.current) return;
+
+      if (stateRef.current === GAME_STATE.PLAYING || stateRef.current === GAME_STATE.BONUS) {
+        try {
+          speakSentence(false);
+        } catch (e) { console.error(e); }
+        setGameState(GAME_STATE.PENALTY);
+        setHearts(prev => Math.max(0, prev - 1));
+      }
+    };
+
+    const triggerGained = (reason) => {
+      if (isCurrentlyFocused.current) return;
+      isCurrentlyFocused.current = true;
+      if (popupSuspend.current) return;
+      
+      if (stateRef.current === GAME_STATE.PENALTY) {
+        try {
+          speakSentence(true);
+        } catch (e) { console.error(e); }
+      }
+    };
+
+    const handleVisibility = () => {
+      if (document.hidden) triggerLost("visibility");
+      else triggerGained("visibility");
+    };
+
+    const handleBlur = () => triggerLost("blur");
+    const handleFocus = () => triggerGained("focus");
+    const handleMouseLeave = () => triggerLost("mouseleave");
+    const handleMouseEnter = () => triggerGained("mouseenter");
+
+    document.addEventListener('visibilitychange', handleVisibility);
+    window.addEventListener('blur', handleBlur);
+    window.addEventListener('focus', handleFocus);
+    document.addEventListener('mouseleave', handleMouseLeave);
+    document.addEventListener('mouseenter', handleMouseEnter);
+
+    const poll = setInterval(() => {
+      if (document.hidden || !document.hasFocus()) triggerLost("polling");
+      else {
+        if (!isCurrentlyFocused.current && !document.hidden && document.hasFocus()) {
+          triggerGained("polling-return");
+        }
+      }
+    }, 150); // Balanced 150ms for performance
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibility);
+      window.removeEventListener('blur', handleBlur);
+      window.removeEventListener('focus', handleFocus);
+      document.removeEventListener('mouseleave', handleMouseLeave);
+      document.removeEventListener('mouseenter', handleMouseEnter);
+      clearInterval(poll);
+    };
+  }, []);
+
+  const kickstartAudio = () => {
+    // Unlocks AudioContext for the buzzer
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
     
-    // Playful audio penalty
-    speakPenalty();
-
-    if (gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.BONUS) {
-      setGameState(GAME_STATE.PENALTY);
-      setHearts(prev => Math.max(0, prev - 1));
+    // Unlocks TTS engine with a silent utterance
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+      const s = new SpeechSynthesisUtterance("");
+      s.volume = 0;
+      window.speechSynthesis.speak(s);
     }
-  });
+  };
 
   const goLevelMap = () => setGameState(GAME_STATE.LEVEL_MAP);
 
@@ -305,7 +409,7 @@ function App() {
           <div className="logo-icon">🏏</div>
           <h1 className="title-main">जब हम पिछली बार 10 थे</h1>
           <p className="subtitle">10-Level Ultimate Campaign</p>
-          <button className="play-btn" onClick={goLevelMap}>
+          <button className="play-btn" onClick={() => { kickstartAudio(); goLevelMap(); }}>
             {unlockedLevel > 1 ? "Continue Journey" : "Start Journey"}
           </button>
           <button onClick={resetProgress} style={{ marginTop: '32px', background: 'transparent', color: 'var(--danger-color)', border: 'none', textDecoration: 'underline', cursor: 'pointer', fontSize: '15px' }}>
@@ -326,7 +430,7 @@ function App() {
                 <button 
                   key={lvl.levelId} 
                   className={`level-btn ${isUnlocked ? 'unlocked' : 'locked'}`}
-                  onClick={() => isUnlocked && startLevel(lvl.levelId)}
+                  onClick={() => { if (isUnlocked) { kickstartAudio(); startLevel(lvl.levelId); } }}
                   disabled={!isUnlocked}
                 >
                   <div className="level-number">{lvl.levelId}</div>
@@ -380,6 +484,7 @@ function App() {
           <button className="action-btn" onClick={goLevelMap}>Continue to Map</button>
         </div>
       )}
+
     </div>
   );
 }
