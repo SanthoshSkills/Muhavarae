@@ -25,13 +25,43 @@ const shuffleArray = (array) => {
   return newArr;
 };
 
-// TTS Helper
+// TTS Helpers
 const speakHindi = (text) => {
   if (!window.speechSynthesis) return;
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'hi-IN';
   utterance.rate = 0.9;
+  window.speechSynthesis.speak(utterance);
+};
+
+const PENALTY_SENTENCES = [
+  "पकड़े गए! नजर हटी, दुर्घटना घटी!",
+  "अरे ओ! कहाँ भाग रहे हो?",
+  "मम्मी देख रही हैं! पढ़ाई पर ध्यान दो!",
+  "चीटिंग करना बुरी बात है, बेटा!",
+  "कहाँ चले? मुहावरे अभी खत्म नहीं हुए!",
+  "इधर-उधर मत देखो, फोकस करो!",
+  "लगता है किसी ने खिड़की के बाहर देख लिया!",
+  "अरे! गेम छोड़ कर सोशल मीडिया पर?",
+  "वापस आओ! लेवल पूरा करना है!",
+  "शातिर मत बनो, मुझे सब पता है!",
+  "ओहो! ध्यान भटक गया?",
+  "गूगल पर जवाब ढूँढने गए क्या?",
+  "जल्दी वापस आओ, मम्मी आने वाली हैं!",
+  "हार मान ली क्या? वापस आओ!",
+  "इतनी जल्दी थक गए? अभी तो बहुत बाकी है!"
+];
+
+const speakPenalty = () => {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const randomMsg = PENALTY_SENTENCES[Math.floor(Math.random() * PENALTY_SENTENCES.length)];
+  const utterance = new SpeechSynthesisUtterance(randomMsg);
+  utterance.lang = 'hi-IN';
+  utterance.rate = 1.0;
+  // Maximum possible volume setting for the speech engine
+  utterance.volume = 1.0; 
   window.speechSynthesis.speak(utterance);
 };
 
@@ -73,6 +103,10 @@ function App() {
   // Hook handles visibility drop
   useFocusPenalty(() => {
     if (popupSuspend.current) return;
+    
+    // Playful audio penalty
+    speakPenalty();
+
     if (gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.BONUS) {
       setGameState(GAME_STATE.PENALTY);
       setHearts(prev => Math.max(0, prev - 1));
