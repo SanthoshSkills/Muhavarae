@@ -12,6 +12,15 @@
   padding-bottom: 12px;
   border-bottom: 2px solid rgba(255,255,255,0.1);
   margin-bottom: 24px;
+  position: relative;
+  z-index: 1000;
+}
+
+.back-map-btn:hover {
+  background: rgba(255,255,255,0.15) !important;
+  color: #fff !important;
+  border-color: rgba(255,255,255,0.3) !important;
+  transform: translateY(-1px);
 }
 
 .hearts {
@@ -82,48 +91,60 @@
 }
 
 .level-btn {
-  background: rgba(255,255,255,0.05);
-  border: 2px solid rgba(255,255,255,0.1);
-  border-radius: 16px;
-  padding: 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 24px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
 }
 
 .level-btn.unlocked {
-  background: rgba(245, 158, 11, 0.1);
-  border-color: var(--primary-color);
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  border-color: rgba(255,255,255,0.2);
   color: var(--text-main);
   cursor: pointer;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
 .level-btn.unlocked:hover {
-  transform: translateY(-4px);
-  background: rgba(245, 158, 11, 0.2);
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(255,255,255,0.4);
+  background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.08));
 }
 
 .level-btn.locked {
-  opacity: 0.5;
+  opacity: 0.3;
   cursor: not-allowed;
+  filter: grayscale(1);
 }
 
 .level-number {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 800;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+  background: linear-gradient(to bottom, #fff, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .level-title-sm {
-  font-size: 14px;
-  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
   line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .level-btn.unlocked .level-title-sm {
-  color: var(--primary-color);
+  color: #fff;
 }
 
 .game-screen {
@@ -145,15 +166,61 @@
   font-weight: 600;
 }
 
-.story-card {
-  background: rgba(255,255,255,0.05);
-  padding: 16px;
-  border-radius: 16px;
-  margin-bottom: 16px;
-  border: 1px solid rgba(255,255,255,0.1);
-  font-size: 18px;
-  line-height: 1.4;
+/* FLIP CARD STYLES */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  margin-bottom: 24px;
+  min-height: 220px;
+}
+
+.flip-card-inner {
   position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.flip-card-front {
+  background: rgba(255,255,255,0.05);
+  color: white;
+  justify-content: flex-start;
+}
+
+.flip-card-back {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  color: white;
+  transform: rotateY(180deg);
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.story-card {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
 }
 
 .translate-toggle {
@@ -221,6 +288,7 @@
 .option-btn:hover {
   background-color: rgba(255,255,255,0.15);
   transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255,255,255,0.05);
 }
 
 .option-btn.correct {

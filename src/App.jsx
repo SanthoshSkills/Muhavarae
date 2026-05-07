@@ -119,6 +119,7 @@ function App() {
   
   const [selectedOption, setSelectedOption] = useState(null);
   const [showEnglish, setShowEnglish] = useState(false);
+  const [showExitConfirm, setShowExitConfirm] = useState(false);
 
   const isPlayingOrBonus = gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.BONUS;
   const activeQuestionList = isPlayingOrBonus ? (gameState === GAME_STATE.BONUS ? currentLevelObj?.bonus : currentLevelObj?.regular) : null;
@@ -229,13 +230,21 @@ function App() {
   };
 
   const quitToMap = () => {
+    console.log("Back to Map clicked");
+    setShowExitConfirm(true);
     popupSuspend.current = true;
-    const answer = window.confirm("Quit to the campaign map? Your progress in this level will be lost!");
-    setTimeout(() => { popupSuspend.current = false; }, 300);
+  };
 
-    if (answer) {
-      goLevelMap();
-    }
+  const confirmQuit = () => {
+    console.log("Confirmed, going to level map");
+    setShowExitConfirm(false);
+    setGameState(GAME_STATE.LEVEL_MAP);
+    setTimeout(() => { popupSuspend.current = false; }, 500);
+  };
+
+  const cancelQuit = () => {
+    setShowExitConfirm(false);
+    setTimeout(() => { popupSuspend.current = false; }, 500);
   };
 
   const startLevel = (levelId) => {
@@ -323,19 +332,37 @@ function App() {
           {isBonus ? 'BONUS ROUND ⭐' : currentLevelObj.title} - Q{qIndex + 1}
         </div>
         
-        <div className="story-card">
-          <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '10px'}}>
-            <strong>📖 Context:</strong>
-            <button onClick={() => speakHindi(currentData.story_hindi)} className="speaker-icon" title="Read Out Loud">🔊</button>
+        <div className={`flip-card ${selectedOption !== null ? 'flipped' : ''}`}>
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <div className="story-card">
+                <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '10px'}}>
+                  <strong>📖 Context:</strong>
+                  <button onClick={() => speakHindi(currentData.story_hindi)} className="speaker-icon" title="Read Out Loud">🔊</button>
+                </div>
+                
+                <p className={showEnglish ? "" : "hindi-text"} style={{ fontSize: showEnglish ? '18px' : '20px' }}>
+                  {showEnglish ? currentData.story_english : currentData.story_hindi}
+                </p>
+                
+                <button className="translate-toggle" onClick={() => setShowEnglish(!showEnglish)}>
+                  Swap to {showEnglish ? "Hindi" : "English"}
+                </button>
+              </div>
+            </div>
+            
+            <div className="flip-card-back">
+              <div className={selectedOption === currentData.answer ? "meaning-box" : "meaning-box wrong-box"}>
+                <strong>{selectedOption === currentData.answer ? "Correct!" : "Oops! Incorrect."} </strong><br/>
+                <span style={{ fontSize: '1.2rem', display: 'block', marginTop: '8px' }}>
+                  <strong>{currentData.answer}</strong>
+                </span>
+                <p style={{ marginTop: '12px', color: 'var(--text-main)', opacity: 0.9 }}>
+                  Meaning: {currentData.actual_meaning}
+                </p>
+              </div>
+            </div>
           </div>
-          
-          <p className={showEnglish ? "" : "hindi-text"} style={{ fontSize: showEnglish ? '18px' : '20px' }}>
-            {showEnglish ? currentData.story_english : currentData.story_hindi}
-          </p>
-          
-          <button className="translate-toggle" onClick={() => setShowEnglish(!showEnglish)}>
-            Swap to {showEnglish ? "Hindi" : "English"}
-          </button>
         </div>
 
         <div className="question-prompt">
@@ -361,15 +388,10 @@ function App() {
           })}
         </div>
 
-        {/* Persistent Meaning & Next Button */}
+        {/* Persistent Next Button */}
         {selectedOption !== null && (
           <div className="meaning-container slide-up-anim">
-            <div className={selectedOption === currentData.answer ? "meaning-box" : "meaning-box wrong-box"} style={{ marginBottom: '12px' }}>
-              <strong>{selectedOption === currentData.answer ? "Correct!" : "Oops! The correct answer was " + currentData.answer + "."} </strong><br/>
-              Meaning: {currentData.actual_meaning}
-            </div>
-            
-            <button className="action-btn" onClick={() => handleNextQuestion(isBonus)} style={{ backgroundColor: 'var(--primary-color)' }}>
+            <button className="action-btn" onClick={() => handleNextQuestion(isBonus)} style={{ backgroundColor: 'var(--primary-color)', color: '#000' }}>
               {hearts <= 0 ? "You Failed! Proceed 👉" : "Next Question 👉"}
             </button>
           </div>
@@ -391,7 +413,23 @@ function App() {
               ))}
             </div>
             <div style={{ display: 'flex', gap: '16px' }}>
-              <button onClick={quitToMap} style={{ background: 'transparent', color: 'var(--text-muted)', border: 'none', textDecoration: 'underline', cursor: 'pointer', fontSize: '14px', padding: 0 }}>
+              <button 
+                onClick={quitToMap} 
+                className="back-map-btn"
+                style={{ 
+                  background: 'rgba(255,255,255,0.05)', 
+                  color: 'var(--text-muted)', 
+                  border: '1px solid rgba(255,255,255,0.1)', 
+                  borderRadius: '8px',
+                  padding: '6px 12px',
+                  cursor: 'pointer', 
+                  fontSize: '14px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '4px',
+                  transition: 'all 0.2s'
+                }}
+              >
                 🔙 Back to Map
               </button>
             </div>
@@ -425,16 +463,32 @@ function App() {
           <div className="level-grid">
             {ALL_LEVELS.map(lvl => {
               const isUnlocked = lvl.levelId <= unlockedLevel;
-              const isCompleted = lvl.levelId < unlockedLevel; // If it's unlocked beyond it, it's completed
+              const isCompleted = lvl.levelId < unlockedLevel;
+              
+              // Define vibrant colors for levels
+              let accentColor = 'var(--lvl-1-2)';
+              if (lvl.levelId > 2) accentColor = 'var(--lvl-3-4)';
+              if (lvl.levelId > 4) accentColor = 'var(--lvl-5-6)';
+              if (lvl.levelId > 6) accentColor = 'var(--lvl-7-8)';
+              if (lvl.levelId > 8) accentColor = 'var(--lvl-9-10)';
+
               return (
                 <button 
                   key={lvl.levelId} 
                   className={`level-btn ${isUnlocked ? 'unlocked' : 'locked'}`}
                   onClick={() => { if (isUnlocked) { kickstartAudio(); startLevel(lvl.levelId); } }}
                   disabled={!isUnlocked}
+                  style={isUnlocked ? { 
+                    borderLeft: `6px solid ${accentColor}`,
+                    background: `linear-gradient(135deg, ${accentColor}22, ${accentColor}11)`
+                  } : {}}
                 >
-                  <div className="level-number">{lvl.levelId}</div>
-                  <div className="level-title-sm">
+                  <div className="level-number" style={isUnlocked ? { 
+                    background: `linear-gradient(to bottom, #fff, ${accentColor})`,
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent'
+                  } : {}}>{lvl.levelId}</div>
+                  <div className="level-title-sm" style={isUnlocked ? { color: accentColor } : {}}>
                     {isCompleted ? "⭐ Completed" : isUnlocked ? lvl.title : "Locked 🔒"}
                   </div>
                 </button>
@@ -482,6 +536,19 @@ function App() {
             {correctCount < 9 && <span>(Score 9/10 next time to unlock the Bonus Round!)</span>}
           </p>
           <button className="action-btn" onClick={goLevelMap}>Continue to Map</button>
+        </div>
+      )}
+
+      {/* Custom Confirmation Modal */}
+      {showExitConfirm && (
+        <div className="overlay-screen" style={{ backgroundColor: 'rgba(11, 15, 26, 0.9)', backdropFilter: 'blur(8px)' }}>
+          <div className="emoji-giant">🗺️?</div>
+          <h2 className="overlay-title">Quit to Map?</h2>
+          <p className="overlay-desc">Your progress in this level will be lost!</p>
+          <div style={{ display: 'flex', gap: '16px', width: '100%', maxWidth: '300px' }}>
+            <button className="action-btn" onClick={cancelQuit} style={{ background: 'rgba(255,255,255,0.1)' }}>No, Stay</button>
+            <button className="action-btn" onClick={confirmQuit} style={{ backgroundColor: 'var(--danger-color)', color: '#fff' }}>Yes, Quit</button>
+          </div>
         </div>
       )}
 
