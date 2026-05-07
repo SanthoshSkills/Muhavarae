@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import data1 from './data/level1_5.json';
 import data2 from './data/level6_10.json';
 import randomData from './data/muhavare.json';
@@ -653,6 +654,7 @@ function App() {
         </div>
       )}
 
+      <Analytics />
     </div>
   );
 }
