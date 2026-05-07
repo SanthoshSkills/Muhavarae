@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import data1 from './data/level1_5.json';
 import data2 from './data/level6_10.json';
+import randomData from './data/muhavare.json';
 import './App.css';
 
 const ALL_LEVELS = [...data1, ...data2];
@@ -12,7 +13,8 @@ const GAME_STATE = {
   BONUS: 'BONUS',
   PENALTY: 'PENALTY',
   STAGE_CLEAR: 'STAGE_CLEAR',
-  GAME_OVER: 'GAME_OVER'
+  GAME_OVER: 'GAME_OVER',
+  SPOTLIGHT: 'SPOTLIGHT'
 };
 
 const shuffleArray = (array) => {
@@ -120,6 +122,8 @@ function App() {
   const [selectedOption, setSelectedOption] = useState(null);
   const [showEnglish, setShowEnglish] = useState(false);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
+  const [spotlightItem, setSpotlightItem] = useState(null);
+  const [spotlightEnglish, setSpotlightEnglish] = useState(false);
 
   const isPlayingOrBonus = gameState === GAME_STATE.PLAYING || gameState === GAME_STATE.BONUS;
   const activeQuestionList = isPlayingOrBonus ? (gameState === GAME_STATE.BONUS ? currentLevelObj?.bonus : currentLevelObj?.regular) : null;
@@ -322,6 +326,23 @@ function App() {
     setGameState(GAME_STATE.STAGE_CLEAR);
   };
 
+  const openSpotlight = () => {
+    const randomItem = randomData[Math.floor(Math.random() * randomData.length)];
+    setSpotlightItem(randomItem);
+    setSpotlightEnglish(false);
+    setGameState(GAME_STATE.SPOTLIGHT);
+  };
+
+  const refreshSpotlight = () => {
+    const currentId = spotlightItem?.id;
+    let newItem = spotlightItem;
+    while (newItem.id === currentId) {
+      newItem = randomData[Math.floor(Math.random() * randomData.length)];
+    }
+    setSpotlightItem(newItem);
+    setSpotlightEnglish(false);
+  };
+
   // UI Renderers
   const renderQuestionBlock = (isBonus) => {
     if (!currentData) return null;
@@ -354,12 +375,23 @@ function App() {
             <div className="flip-card-back">
               <div className={selectedOption === currentData.answer ? "meaning-box" : "meaning-box wrong-box"}>
                 <strong>{selectedOption === currentData.answer ? "Correct!" : "Oops! Incorrect."} </strong><br/>
-                <span style={{ fontSize: '1.2rem', display: 'block', marginTop: '8px' }}>
-                  <strong>{currentData.answer}</strong>
-                </span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginTop: '8px' }}>
+                  <span style={{ fontSize: '1.2rem', display: 'block' }}>
+                    <strong>{currentData.answer}</strong>
+                  </span>
+                  <button onClick={() => speakHindi(currentData.answer)} className="speaker-icon" style={{ fontSize: '1.2rem' }} title="Pronounce">🔊</button>
+                </div>
                 <p style={{ marginTop: '12px', color: 'var(--text-main)', opacity: 0.9 }}>
                   Meaning: {currentData.actual_meaning}
                 </p>
+                {currentData.origin_hindi && (
+                  <div className="origin-section" style={{ marginTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '12px', textAlign: 'left' }}>
+                    <label style={{ fontSize: '10px', color: 'var(--primary-color)', fontWeight: '800' }}>🔍 INSIDE THE IDIOM:</label>
+                    <p style={{ fontSize: '14px', fontStyle: 'italic', opacity: 0.8 }}>
+                      {showEnglish ? currentData.origin_english : currentData.origin_hindi}
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -460,6 +492,16 @@ function App() {
       {gameState === GAME_STATE.LEVEL_MAP && (
         <div className="menu-screen" style={{ justifyContent: 'flex-start' }}>
           <h2 style={{ marginBottom: '24px' }}>Campaign Map</h2>
+          
+          <div className="spotlight-teaser" onClick={openSpotlight}>
+            <div className="teaser-content">
+              <span className="teaser-badge">SPOTLIGHT ✨</span>
+              <h3>Surprise Muhavara</h3>
+              <p>Discover a random idiom!</p>
+            </div>
+            <div className="teaser-icon">🎁</div>
+          </div>
+
           <div className="level-grid">
             {ALL_LEVELS.map(lvl => {
               const isUnlocked = lvl.levelId <= unlockedLevel;
@@ -536,6 +578,65 @@ function App() {
             {correctCount < 9 && <span>(Score 9/10 next time to unlock the Bonus Round!)</span>}
           </p>
           <button className="action-btn" onClick={goLevelMap}>Continue to Map</button>
+        </div>
+      )}
+
+      {/* Spotlight View */}
+      {gameState === GAME_STATE.SPOTLIGHT && spotlightItem && (
+        <div className="overlay-screen spotlight-screen">
+          <header className="header" style={{ position: 'absolute', top: '16px', left: '16px', right: '16px', border: 'none' }}>
+            <button className="back-map-btn" onClick={goLevelMap}>🔙 Map</button>
+          </header>
+
+          <div className="spotlight-card slide-up-anim">
+            <div className="spotlight-header">
+              <span className="teaser-badge">FEATURED GEM 💎</span>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
+                <h1 className="hindi-text" style={{ margin: 0 }}>{spotlightItem.muhavara}</h1>
+                <button onClick={() => speakHindi(spotlightItem.muhavara)} className="speaker-icon" style={{ fontSize: '1.8rem' }} title="Pronounce">🔊</button>
+              </div>
+            </div>
+
+            <div className="spotlight-body">
+              <div className="detail-item">
+                <label>Meaning:</label>
+                <p>{spotlightItem.actual_meaning}</p>
+              </div>
+
+              {spotlightItem.origin_hindi && (
+                <div className="detail-item origin-box">
+                  <label>🔍 Inside the Idiom:</label>
+                  <p className={spotlightEnglish ? "" : "hindi-text"} style={{ fontSize: '14px', fontStyle: 'italic' }}>
+                    {spotlightEnglish ? spotlightItem.origin_english : spotlightItem.origin_hindi}
+                  </p>
+                </div>
+              )}
+
+              <div className="detail-item glass-box">
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                  <label>Usage & Context:</label>
+                  <div style={{ display: 'flex', gap: '8px' }}>
+                    <button className="speaker-icon sm" onClick={() => speakHindi(spotlightEnglish ? spotlightItem.story_english : spotlightItem.story_hindi)}>🔊</button>
+                    <button className="translate-toggle sm" onClick={() => setSpotlightEnglish(!spotlightEnglish)}>
+                      {spotlightEnglish ? "HI" : "EN"}
+                    </button>
+                  </div>
+                </div>
+                <p className={spotlightEnglish ? "" : "hindi-text"}>
+                  {spotlightEnglish ? spotlightItem.story_english : spotlightItem.story_hindi}
+                </p>
+              </div>
+            </div>
+
+            <div className="spotlight-footer">
+              <button className="action-btn" onClick={refreshSpotlight} style={{ backgroundColor: 'var(--primary-color)', color: '#000' }}>
+                Roll Another! 🎲
+              </button>
+              <button className="action-btn" onClick={goLevelMap} style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.1)', marginTop: '8px' }}>
+                Back to Journey
+              </button>
+            </div>
+          </div>
         </div>
       )}
 

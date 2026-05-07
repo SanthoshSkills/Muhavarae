@@ -5,6 +5,8 @@
     "actual_meaning": "To run away / Escape",
     "story_hindi": "तुमने अभी शर्मा जी की खिड़की अपनी प्लास्टिक की गेंद से तोड़ दी है। इससे पहले कि वह डंडा लेकर बाहर आएं, तुम क्या करते हो?",
     "story_english": "You just broke Sharma ji's window with your plastic ball. What do you do before he comes out with a stick?",
+    "origin_hindi": "यह मुहावरा भागने की गति को दर्शाता है। 9 और 2 का योग 11 होता है, और '11' संख्या दो पैरों की तरह दिखती है जो तेज़ी से भाग रहे हों।",
+    "origin_english": "The sum of 9 and 2 is 11, and the number '11' resembles a pair of legs running away swiftly.",
     "options": ["आग बबूला होना", "नौ दो ग्यारह होना", "घी के दीये जलाना", "ईंट से ईंट बजाना"],
     "answer": "नौ दो ग्यारह होना"
   },
@@ -14,6 +16,8 @@
     "actual_meaning": "To be scared / act submissive",
     "story_hindi": "तुम टीवी पर मारियो खेल रहे थे। अचानक पापा कमरे में आते हैं। तुम तुरंत टीवी बंद करके कैसे बैठ जाते हो?",
     "story_english": "You were playing Mario. Suddenly Papa enters the room. How do you sit after turning it off?",
+    "origin_hindi": "जब एक बिल्ली पानी में भीग जाती है, तो वह बहुत लाचार और डरी हुई दिखती है। वहीं से यह मुहावरा डरपोक व्यवहार के लिए बना।",
+    "origin_english": "A cat soaked in water looks helpless and scared, leading to this idiom for submissive behavior out of fear.",
     "options": ["भीगी बिल्ली बनना", "आसमान सिर पर उठाना", "हाथ मलना", "मुँह में पानी आना"],
     "answer": "भीगी बिल्ली बनना"
   },
@@ -23,6 +27,8 @@
     "actual_meaning": "To be extremely angry",
     "story_hindi": "मम्मी को पता चला कि तुमने अपनी बहन के हिस्से की मैगी भी खा ली। उनका क्या हाल होता है?",
     "story_english": "Mummy found out you ate your sister's portion of Maggi too. What does she become?",
+    "origin_hindi": "बबूला एक प्रकार का बवंडर या चक्रवात होता है। जब उसमें आग जैसी तीव्रता और विनाशकारी शक्ति मिल जाए, तो वह अत्यधिक क्रोध का प्रतीक बन जाता है।",
+    "origin_english": "'Babooola' refers to a whirlwind. Combining it with fire represents a state of explosive and destructive anger.",
     "options": ["हवा से बातें करना", "फूला न समाना", "आग बबूला होना", "हाथ-पांव फूलना"],
     "answer": "आग बबूला होना"
   },
@@ -32,6 +38,8 @@
     "actual_meaning": "Mouth watering / temptation",
     "story_hindi": "स्कूल के बाहर भेल-पूरी वाले अंकल चटपटा मसाला मिला रहे हैं। तुम्हारी क्या हालत होती है?",
     "story_english": "The bhel-puri uncle outside school is mixing spicy masala. What happens to you?",
+    "origin_hindi": "यह एक जैविक प्रतिक्रिया है। जब हम अपनी पसंद का स्वादिष्ट भोजन देखते हैं, तो मस्तिष्क लार ग्रंथियों को सक्रिय कर देता है।",
+    "origin_english": "A natural biological response where the brain triggers saliva production upon seeing appetizing food.",
     "options": ["मुँह ताकना", "मुँह फुलाना", "मुँह में पानी आना", "मुँह छिपाना"],
     "answer": "मुँह में पानी आना"
   },
@@ -41,6 +49,8 @@
     "actual_meaning": "To run very fast",
     "story_hindi": "तुम्हें नई रेंजर साइकिल मिली है और तुम ढलान पर उसे चला रहे हो।",
     "story_english": "You got a new Ranger cycle and you are riding it down the slope.",
+    "origin_hindi": "यह गति की पराकाष्ठा को दर्शाता है। जब कोई इतनी तेज़ भागता है कि उसे हवा का अहसास तक नहीं होता, मानो वह हवा से संवाद कर रहा हो।",
+    "origin_english": "Represents extreme speed, as if the person is moving so fast they are in conversation with the wind.",
     "options": ["हवा से बातें करना", "हवा में उड़ना", "हाथ साफ़ करना", "हस्तक्षेप करना"],
     "answer": "हवा से बातें करना"
   },
@@ -50,6 +60,8 @@
     "actual_meaning": "To be seen rarely",
     "story_hindi": "तुम्हारा वह दोस्त जिसने तुमसे 50 रुपये उधार लिए थे, अब कैंटीन में नज़र ही नहीं आता।",
     "story_english": "The friend who borrowed 50 rupees from you is never seen in the canteen anymore.",
+    "origin_hindi": "ईद का चाँद साल में एक बार ही दिखता है और उसका इंतज़ार पूरी दुनिया करती है। इसलिए जो बहुत कम दिखे, उसे ईद का चाँद कहते हैं।",
+    "origin_english": "The crescent moon of Eid is seen only once a year after long anticipation, symbolizing something rarely seen.",
     "options": ["ईद का चाँद होना", "आँख का तारा", "हाथ पर हाथ धरे बैठना", "गले का हार"],
     "answer": "ईद का चाँद होना"
   },
@@ -59,6 +71,8 @@
     "actual_meaning": "To defeat completely",
     "story_hindi": "गली क्रिकेट के फाइनल मैच में तुम्हारी टीम ने दूसरी टीम को 20 रन से हरा दिया।",
     "story_english": "In the gully cricket finals, your team defeated the opponent by 20 runs.",
+    "origin_hindi": "अत्यधिक खट्टी चीज़ खाने से दाँतों में झुनझुनी आ जाती है और वे काम करना बंद कर देते हैं। युद्ध में दुश्मन को लाचार करने के लिए यह मुहावरा बना।",
+    "origin_english": "Eating something very sour makes the teeth sensitive and unusable; used metaphorically for making an opponent helpless.",
     "options": ["दाँत खट्टे करना", "दाँतों तले उंगली दबाना", "दाल में काला होना", "उल्लू सीधा करना"],
     "answer": "दाँत खट्टे करना"
   },
@@ -68,6 +82,8 @@
     "actual_meaning": "To make a lot of noise",
     "story_hindi": "जब टीचर کلاس में नहीं होती, तो पीछे बैठने वाले बच्चे क्या करते हैं?",
     "story_english": "When the teacher is not in class, what do the backbenchers do?",
+    "origin_hindi": "यह एक अतिशयोक्ति है। इतनी आवाज़ करना कि ऐसा लगे जैसे पूरे ब्रह्मांड का शोर एक ही जगह इकट्ठा हो गया हो।",
+    "origin_english": "A hyperbole suggesting making so much noise that it feels like the weight and sound of the entire sky is being lifted.",
     "options": ["आसमान सिर पर उठाना", "पापड़ बेलना", "घोड़े बेचकर सोना", "राई का पहाड़ बनाना"],
     "answer": "आसमान सिर पर उठाना"
   },
@@ -77,6 +93,8 @@
     "actual_meaning": "To sleep soundly / carefree",
     "story_hindi": "बोर्ड के एग्जाम खत्म होने के बाद वाले दिन तुम सुबह 11 बजे तक कैसे सोते हो?",
     "story_english": "The day after your board exams end, how do you sleep till 11 AM?",
+    "origin_hindi": "पुराने समय में व्यापारी घोड़ों की सुरक्षा को लेकर चिंतित रहते थे। जब वे घोड़े बेच देते थे, तो वे बिना किसी डर के गहरी नींद सो सकते थे।",
+    "origin_english": "In ancient times, horse traders worried about their safety. Once sold, they could finally sleep without any anxiety or responsibility.",
     "options": ["उल्लू सीधा करना", "घोड़े बेचकर सोना", "आँखें बिछाना", "हाथ पर हाथ धरे बैठना"],
     "answer": "घोड़े बेचकर सोना"
   },
@@ -86,6 +104,8 @@
     "actual_meaning": "To celebrate",
     "story_hindi": "जब तुम्हें पता चलता है कि कल से भारी बारिश के कारण स्कूल की छुट्टियां हैं।",
     "story_english": "When you find out tomorrow is a holiday due to heavy rain.",
+    "origin_hindi": "भगवान राम के अयोध्या लौटने पर खुशी में घी के दीपक जलाए गए थे। तब से यह अत्यधिक खुशी और उत्सव का प्रतीक है।",
+    "origin_english": "Originates from lighting ghee lamps to celebrate Lord Rama's return to Ayodhya, symbolizing extreme joy and prosperity.",
     "options": ["घी के दीये जलाना", "हाथ मलना", "मुँह फुलाना", "आस्तीन का साँप"],
     "answer": "घी के दीये जलाना"
   },
@@ -95,6 +115,8 @@
     "actual_meaning": "A hidden enemy",
     "story_hindi": "वह दोस्त जो कहता था 'मैंने कुछ नहीं पढ़ा' और टेस्ट में फुल मार्क्स ले आया।",
     "story_english": "The friend who said 'I studied nothing' but gets full marks in the test.",
+    "origin_hindi": "आस्तीन (कमीज़ की बांह) में छुपा हुआ साँप खतरनाक होता है क्योंकि वह बिल्कुल पास होकर भी दिखाई नहीं देता और कभी भी काट सकता है।",
+    "origin_english": "A snake hidden in one's sleeve is dangerous because it is close yet invisible, ready to strike unexpectedly.",
     "options": ["आस्तीन का साँप", "आँख का तारा", "गले का हार", "ईद का चाँद"],
     "answer": "आस्तीन का साँप"
   },
@@ -104,6 +126,8 @@
     "actual_meaning": "To be surprised",
     "story_hindi": "जब स्कूल का सबसे शांत बच्चा एनुअल फंक्शन में ज़बरदस्त डांस करता है।",
     "story_english": "When the quietest kid in school does a fantastic dance at the annual function.",
+    "origin_hindi": "यह आश्चर्य व्यक्त करने की एक शारीरिक मुद्रा है। जब हम कुछ अविश्वसनीय देखते हैं, तो अनजाने में उंगली दाँतों के बीच आ जाती है।",
+    "origin_english": "A reflexive physical gesture of surprise where one bites their finger upon seeing something unbelievable.",
     "options": ["दाँतों तले उंगली दबाना", "दाँत खट्टे करना", "मुँह फुलाना", "हाथ पैर मारना"],
     "answer": "दाँतों तले उंगली दबाना"
   },
@@ -113,6 +137,8 @@
     "actual_meaning": "To regret",
     "story_hindi": "क्लास में समोसे बँट रहे थे लेकिन तुम वाशरूम गए हुए थे और वापस आने तक सब खत्म हो गए।",
     "story_english": "Samosas were distributed in class, but you were in the washroom and when you returned they were all gone.",
+    "origin_hindi": "पछतावे के समय लोग अक्सर बेचैनी में अपने हाथों को आपस में रगड़ते या मलते हैं। वहीं से यह मुहावरा पछतावे का प्रतीक बना।",
+    "origin_english": "People often rub their hands together in agitation or regret, leading to this idiom for feeling sorry about a lost opportunity.",
     "options": ["हाथ मलना", "हाथ साफ़ करना", "गले पड़ना", "तलवे चाटना"],
     "answer": "हाथ मलना"
   },
@@ -122,6 +148,8 @@
     "actual_meaning": "To face difficulties / work hard",
     "story_hindi": "पीटी (PT) वाले सर से अपनी जब्त की हुई कॉमिक कलेक्ट करने के लिए तुम्हें क्या करना पड़ा?",
     "story_english": "What did you have to go through to get your confiscated comic book back from the PT sir?",
+    "origin_hindi": "पापड़ बेलना एक उबाऊ और मेहनत भरा काम है जिसमें बहुत धैर्य चाहिए। जीवन की मुश्किलों को इसी धैर्य और मेहनत से जोड़ा गया है।",
+    "origin_english": "Making papadums is a tedious, repetitive, and labor-intensive task, used here for enduring hardships.",
     "options": ["घोड़े बेचकर सोना", "पापड़ बेलना", "हवा में उड़ना", "छक्के छुड़ाना"],
     "answer": "पापड़ बेलना"
   },
@@ -131,6 +159,8 @@
     "actual_meaning": "To get one's own selfish work done",
     "story_hindi": "अमन सिर्फ तब तुमसे बात करता है जब उसे होमवर्क कॉपी करना होता है। वह अपना...",
     "story_english": "Aman only talks to you when he needs to copy homework. He only...",
+    "origin_hindi": "उल्लू को बेवकूफ माना जाता है। अपना स्वार्थ सिद्ध करने के लिए किसी को बेवकूफ बनाना या परिस्थिति का फायदा उठाना 'उल्लू सीधा करना' कहलाता है।",
+    "origin_english": "Refers to manipulating or making a fool of someone (traditionally an owl in Hindi folklore) for one's own selfish motives.",
     "options": ["उल्लू सीधा करना", "हवा से बातें करना", "नाक में दम करना", "आँखें बिछाना"],
     "answer": "उल्लू सीधा करना"
   },
@@ -140,6 +170,8 @@
     "actual_meaning": "To steal",
     "story_hindi": "तुमने अपनी पेन्सिल बॉक्स में नया रबर रखा था, पर लंच के बाद किसी ने उस पर...",
     "story_english": "You put a new eraser in your pencil box, but after lunch someone...",
+    "origin_hindi": "चोरी करते समय हाथ इतनी सफाई से चलते हैं कि किसी को पता नहीं चलता। इसी 'सफाई' से यह मुहावरा व्यंग्य के रूप में बना।",
+    "origin_english": "Implies a 'clean' job of stealing where the hand moves so deftly that the act goes unnoticed.",
     "options": ["हाथ साफ़ करना", "हाथ मलना", "मुँह छिपाना", "मुंह में पानी आना"],
     "answer": "हाथ साफ़ करना"
   },
@@ -149,6 +181,8 @@
     "actual_meaning": "Something is suspicious",
     "story_hindi": "जब मम्मी तुम्हें अचानक बिना मांगे 100 रुपये दे दें और बहुत प्यार से बात करें।",
     "story_english": "When Mummy suddenly gives you 100 rupees out of nowhere and talks very softly.",
+    "origin_hindi": "दाल में तड़के के अलावा अगर कोई काला कंकड़ या जला हुआ हिस्सा दिखे, तो स्वाद खराब होने का डर रहता है। इसी से संदेह का भाव पैदा हुआ।",
+    "origin_english": "Finding a black pebble or burnt bit in lentils suggests a ruined meal, metaphorically used for sensing something suspicious.",
     "options": ["दाल में काला होना", "घी के दीये जलाना", "पापड़ बेलना", "मुँह फुलाना"],
     "answer": "दाल में काला होना"
   },
@@ -158,6 +192,8 @@
     "actual_meaning": "To irritate excessively",
     "story_hindi": "पड़ोस वाले शर्मा आंटी के बच्चे जब तुम्हारे घर आते हैं, तो तुम्हारी क्या हालत करते हैं?",
     "story_english": "When the neighbor Sharma aunty's kids come to your house, what do they do to you?",
+    "origin_hindi": "साँस लेना मुश्किल कर देना। जब कोई इतना परेशान करे कि चैन की साँस तक न ली जा सके, तो उसे नाक में दम करना कहते हैं।",
+    "origin_english": "To make breathing difficult. Used when someone harasses or irritates you so much that you can't even rest in peace.",
     "options": ["हवा से बातें करना", "नाक में दम करना", "आँख का तारा होना", "ईद का चाँद होना"],
     "answer": "नाक में दम करना"
   },
@@ -167,6 +203,8 @@
     "actual_meaning": "To be overjoyed",
     "story_hindi": "जब तुम्हें पता चलता है कि तुम्हारे पास वीडियो गेम खेलने के लिए पूरा हफ्ता है।",
     "story_english": "When you realize you have an entire week off to play video games.",
+    "origin_hindi": "अत्यधिक खुशी में शरीर में उत्साह इतना भर जाता है कि वह समाता नहीं। यह मुहावरा गर्व और खुशी के फूलने से जुड़ा है।",
+    "origin_english": "To be so filled with joy that one's body cannot contain the excitement, much like a blooming flower.",
     "options": ["फूला न समाना", "आग बबूला होना", "हाथ मलना", "भीगी बिल्ली बनना"],
     "answer": "फूला न समाना"
   },
@@ -176,6 +214,8 @@
     "actual_meaning": "Very dear",
     "story_hindi": "क्लास का वह बच्चा जो हमेशा फर्स्ट आता है और टीचर्स का फेवरेट है।",
     "story_english": "The kid in class who always stands first and is every teacher's favorite.",
+    "origin_hindi": "आँख की पुतली (तारा) सबसे नाजुक और महत्वपूर्ण हिस्सा है, जिसके बिना दृष्टि संभव नहीं। इसी तरह बहुत प्यारा व्यक्ति आँख का तारा कहलाता है।",
+    "origin_english": "The pupil of the eye (star) is the most precious and essential part for vision, used metaphorically for a beloved person.",
     "options": ["आस्तीन का साँप", "आँख का तारा", "ईद का चाँद", "गले की हड्डी"],
     "answer": "आँख का तारा"
   },
@@ -185,6 +225,8 @@
     "actual_meaning": "To make a big issue of a small thing",
     "story_hindi": "तुम्हारे पेन की थोड़ी सी स्याही दोस्त के शर्ट पर लग गई और उसने पूरा स्कूल सिर पर उठा लिया।",
     "story_english": "A tiny drop of your pen's ink fell on your friend's shirt and he made a huge fuss.",
+    "origin_hindi": "राई (सरसों) बहुत छोटी होती है, जबकि पहाड़ बहुत विशाल। छोटी सी बात को बहुत बड़ा करके बताना राई का पहाड़ बनाना है।",
+    "origin_english": "A mustard seed (rai) is tiny, while a mountain is huge. Used for exaggerating a minor issue into a major crisis.",
     "options": ["राई का पहाड़ बनाना", "दाँत खट्टे करना", "घाव पर नमक छिड़कना", "हवा में तीर मारना"],
     "answer": "राई का पहाड़ बनाना"
   },
@@ -194,6 +236,8 @@
     "actual_meaning": "To give a crushing defeat",
     "story_hindi": "मैथ्स के टेस्ट में जो सवाल आए थे, उन्होंने पूरी क्लास के...",
     "story_english": "The questions in the unexpected Maths test did what to the whole class?",
+    "origin_hindi": "युद्ध या खेल में विपक्षी के होश उड़ा देना। पुरानी ताश की बाजी में 'छक्का' मारना विपक्षी को लाचार कर देता था।",
+    "origin_english": "Originates from battle or games where making a decisive move (like a 'six' in cards/dice) leaves the opponent demoralized.",
     "options": ["छक्के छुड़ाना", "घी के दीये जलाना", "हाथ पर हाथ धरे बैठना", "आँखें खुलना"],
     "answer": "छक्के छुड़ाना"
   },
@@ -203,6 +247,8 @@
     "actual_meaning": "To realize the truth / Wake up to reality",
     "story_hindi": "जब प्री-बोर्ड में सिर्फ 40% मार्क्स आए, तब जाकर तुम्हारी...",
     "story_english": "When you got only 40% in pre-boards, finally your...",
+    "origin_hindi": "अज्ञानता की नींद से जागना। जब किसी धोखे या गलती के बाद सच्चाई का पता चलता है, तो उसे आँखें खुलना कहते हैं।",
+    "origin_english": "To wake up from the sleep of ignorance. Used when one finally understands the harsh reality after a mistake or deception.",
     "options": ["हवा से बातें करना", "आँखें खुलना", "हाथ साफ़ करना", "तलवे चाटना"],
     "answer": "आँखें खुलना"
   },
@@ -212,6 +258,8 @@
     "actual_meaning": "To achieve something impossible",
     "story_hindi": "तुमने अपने पापा से कहा कि तुम हिस्ट्री में फुल स्कूल टॉप करोगे। पापा कहते हैं तुम...",
     "story_english": "You told your dad you will top the entire school in History. Dad says that would be like...",
+    "origin_hindi": "आसमान से तारे तोड़ना नामुमकिन काम है। जब कोई बहुत बड़ा और असंभव सा वादा करता है, तो उसे 'तारे तोड़ लाना' कहते हैं।",
+    "origin_english": "Breaking stars from the sky is an impossible feat, used metaphorically for promising or doing something extremely difficult.",
     "options": ["तारे तोड़ लाना", "आसमान सिर पर उठाना", "दाल में काला होना", "राई का पहाड़ बनाना"],
     "answer": "तारे तोड़ लाना"
   },
@@ -221,6 +269,8 @@
     "actual_meaning": "From one trouble to another",
     "story_hindi": "तुम मैथ्स की क्लास बंक करके लाइब्रेरी गए, पर वहां प्रिंसिपल मिल गए!",
     "story_english": "You bunked the Maths class to hide in the library, but you found the Principal there!",
+    "origin_hindi": "आसमान से गिरना एक बड़ी आफत है, और फिर ज़मीन पर आने के बजाय खजूर के पेड़ के कांटों में फंस जाना दूसरी आफत है।",
+    "origin_english": "Falling from the sky is a disaster, but getting stuck on a thorny palm tree before reaching the ground is a double misfortune.",
     "options": ["आसमान से गिरा खजूर में अटका", "ऊँट के मुँह में ज़ीरा", "मुँह में पानी आना", "हवा में तीर मारना"],
     "answer": "आसमान से गिरा खजूर में अटका"
   },
@@ -230,6 +280,8 @@
     "actual_meaning": "Very insufficient quantity for a big need",
     "story_hindi": "तुम पूरे दिन भूखे थे और तुम्हारे दोस्त ने तुम्हें सिर्फ एक चिप्स का टुकड़ा दिया।",
     "story_english": "You were starving all day and your friend gave you just one single chip to eat.",
+    "origin_hindi": "ऊँट एक बहुत बड़ा जानवर है। उसे खाने के लिए बहुत भोजन चाहिए, उसे सिर्फ एक छोटा सा जीरा देना उसकी भूख के लिए कुछ भी नहीं है।",
+    "origin_english": "A camel is a massive animal that needs large amounts of food; giving it a tiny cumin seed (jeera) is utterly insufficient.",
     "options": ["ऊँट के मुँह में ज़ीरा", "दाल में काला होना", "घी के दीये जलाना", "पापड़ बेलना"],
     "answer": "ऊंट के मुँह में ज़ीरा"
   },
@@ -239,6 +291,8 @@
     "actual_meaning": "To add insult to injury",
     "story_hindi": "टेस्ट में फेल होने के बाद तुम्हारे भाई ने गाना चलाया 'तू तो गया'।",
     "story_english": "After you failed the test, your brother started playing the song 'You are finished'.",
+    "origin_hindi": "खुले घाव पर नमक लगने से बहुत जलन और दर्द होता है। दुखी व्यक्ति को और ज़्यादा दुखी करना 'घाव पर नमक छिड़कना' है।",
+    "origin_english": "Applying salt to an open wound causes intense pain. Used for making someone's existing suffering even worse.",
     "options": ["घाव पर नमक छिड़कना", "कान भरना", "आँखें बिछाना", "तलवे चाटना"],
     "answer": "घाव पर नमक छिड़कना"
   },
@@ -248,6 +302,8 @@
     "actual_meaning": "To poison someone's mind",
     "story_hindi": "पड़ोस की आंटी तुम्हारी मम्मी से तुम्हारे खिलाफ क्या कर रही हैं?",
     "story_english": "What is the neighborhood aunty doing to your mother against you?",
+    "origin_hindi": "चुपके से किसी के कान में दूसरी व्यक्ति के बारे में बुराई करना, ताकि उसके विचार बदल जाएं। यह चुगली करने का एक रूप है।",
+    "origin_english": "Whispering negative things into someone's ear to change their opinion about another person; a form of backbiting.",
     "options": ["कान भरना", "नाक में दम करना", "हाथ मलना", "हस्तक्षेप करना"],
     "answer": "कान भरना"
   },
@@ -257,6 +313,8 @@
     "actual_meaning": "To welcome eagerly",
     "story_hindi": "गर्मी की छुट्टियों में हम अपने कज़िन के आने का कैसे इंतज़ार करते हैं?",
     "story_english": "How do we wait for our cousins to arrive during the summer holidays?",
+    "origin_hindi": "किसी के स्वागत में पलकें तक बिछा देना। यह प्रेम और सम्मान के साथ बहुत बेसब्री से इंतज़ार करने की पराकाष्ठा है।",
+    "origin_english": "To wait with such intensity and love that it feels like you've spread your eyes (eyelashes) on the path of the guest.",
     "options": ["आँखें बिछाना", "ताल ठोकना", "आँख दिखाना", "मुँह फुलाना"],
     "answer": "आँखें बिछाना"
   },
@@ -266,6 +324,8 @@
     "actual_meaning": "To sulk / be upset",
     "story_hindi": "जब तुम्हें टीवी का रिमोट नहीं मिलता तो तुम कोने में जाकर क्या करते हो?",
     "story_english": "When you don't get the TV remote, what do you do sitting in the corner?",
+    "origin_hindi": "नाराज़गी में चेहरा भारी कर लेना या गाल फुला लेना। यह गुस्सा ज़ाहिर करने का एक मूक (Silent) तरीका है।",
+    "origin_english": "The act of puffing one's cheeks or looking grim when upset; a common silent way to show dissatisfaction.",
     "options": ["मुँह फुलाना", "मुँह छिपाना", "मुँह ताकना", "दाँत खट्टे करना"],
     "answer": "मुँह फुलाना"
   },
@@ -275,6 +335,8 @@
     "actual_meaning": "To make wild guesses",
     "story_hindi": "MCQ एग्जाम में जब तुम्हें कोई आंसर नहीं आता, तो तुम अक्कड़-बक्कड़ करके...",
     "story_english": "In the MCQ exam when you don't know the answer, you do inky-pinky-ponky and...",
+    "origin_hindi": "बिना लक्ष्य को देखे तीर चलाना। जब काम बिना किसी आधार या जानकारी के केवल अंदाज़े पर किया जाए।",
+    "origin_english": "Shooting arrows into the air without a target, symbolizing taking actions based on pure guesswork rather than facts.",
     "options": ["हवा में तीर मारना", "हवा से बातें करना", "हवा में उड़ना", "उल्लू सीधा करना"],
     "answer": "हवा में तीर मारना"
   },
@@ -284,6 +346,8 @@
     "actual_meaning": "To be a forced burden",
     "story_hindi": "तुम खेलने जा रहे थे और मम्मी ने कहा कि छोटे भाई को भी साथ ले जाओ।",
     "story_english": "You were going out to play and Mummy said take your little brother along too.",
+    "origin_hindi": "किसी ऐसी चीज़ या व्यक्ति का ज़िम्मा मिलना जिसे आप नहीं चाहते थे। मानो वह ज़बरदस्ती आपके गले में बांध दिया गया हो।",
+    "origin_english": "Being forced to accept a responsibility or a person against your will, as if it were tied around your neck.",
     "options": ["गले पड़ना", "गले का हार", "हाथ साफ़ करना", "हस्तक्षेप करना"],
     "answer": "गले पड़ना"
   },
@@ -293,6 +357,8 @@
     "actual_meaning": "To challenge for a fight",
     "story_hindi": "डब्लूडब्लूई (WWE) देखकर अगले दिन स्कूल में तुम्हारे दोस्त ने तुम्हें...",
     "story_english": "After watching WWE, next day in school your friend did what to you?",
+    "origin_hindi": "कुश्ती में पहलवान अपनी जाँघों पर हाथ मारकर दूसरे को चुनौती देते हैं। वहीं से यह मुहावरा मुकाबले के लिए बना।",
+    "origin_english": "Wrestlers slap their thighs to challenge their opponents, now used metaphorically for any kind of challenge.",
     "options": ["ताल ठोकना", "छक्के छुड़ाना", "हाथ पैर मारना", "नाक में दम करना"],
     "answer": "ताल ठोकना"
   },
@@ -302,6 +368,8 @@
     "actual_meaning": "To struggle / make desperate efforts",
     "story_hindi": "एग्जाम से एक रात पहले सिलेबस खत्म करने के लिए तुम बहुत...",
     "story_english": "To finish the entire syllabus the night before the exam, you were really...",
+    "origin_hindi": "पानी में डूबता हुआ व्यक्ति बचने के लिए तेज़ी से हाथ-पैर चलाता है। इसी तरह मुश्किल वक्त में किए गए संघर्ष को हाथ-पैर मारना कहते हैं।",
+    "origin_english": "A drowning person flails their limbs to stay afloat; metaphorically used for making desperate attempts in a crisis.",
     "options": ["हाथ पैर मारना", "घोड़े बेचकर सोना", "हाथ पर हाथ धरे बैठना", "घी के दीये जलाना"],
     "answer": "हाथ पैर मारना"
   },
@@ -311,6 +379,8 @@
     "actual_meaning": "To sit doing nothing",
     "story_hindi": "प्रोजेक्ट जमा करने की लास्ट डेट है और तुम्हारा दोस्त अभी तक...",
     "story_english": "It's the assignment submission date and your friend is still...",
+    "origin_hindi": "निष्क्रियता का प्रतीक। जब काम करने के बजाय इंसान आलस में या बिना किसी योजना के खाली बैठा रहे।",
+    "origin_english": "Symbolizes inactivity and laziness, where one sits idle instead of taking necessary action.",
     "options": ["हाथ पर हाथ धरे बैठना", "पापड़ बेलना", "हवा में तीर मारना", "रायता फैलाना"],
     "answer": "हाथ पर हाथ धरे बैठना"
   },
@@ -320,6 +390,8 @@
     "actual_meaning": "To create a mess",
     "story_hindi": "तुमने किचन में खुद सैंडविच बनाने की कोशिश की और पूरी जगह...",
     "story_english": "You tried to make a sandwich yourself in the kitchen and completely...",
+    "origin_hindi": "रायता अगर गिर जाए तो उसे समेटना बहुत मुश्किल होता है। इसी तरह किसी काम को बिगाड़कर मुश्किल स्थिति पैदा कर देना रायता फैलाना है।",
+    "origin_english": "Spilled yogurt (raita) is very hard to clean up; similarly, creating a complicated mess out of a simple situation.",
     "options": ["रायता फैलाना", "राई का पहाड़ बनाना", "आसमान सिर पर उठाना", "दाल में काला होना"],
     "answer": "रायता फैलाना"
   },
@@ -329,6 +401,8 @@
     "actual_meaning": "To progress rapidly",
     "story_hindi": "स्कूल छोड़ते ही तुम्हारे दोस्त का यूट्यूब चैनल एकदम वायरल हो गया।",
     "story_english": "Right after leaving school, your friend's YouTube channel went totally viral. He is...",
+    "origin_hindi": "ऐसी प्रगति जो समय के साथ दोगुनी-चौगुनी रफ़्तार से बढ़े। यह निरंतर और तेज़ी से होने वाली सफलता का आशीर्वाद है।",
+    "origin_english": "Progress that multiplies day and night; used as a blessing or observation of rapid and continuous success.",
     "options": ["दिन दूनी रात चौगुनी तरक्की करना", "हाथ मलना", "हवा से बातें करना", "फूला न समाना"],
     "answer": "दिन दूनी रात चौगुनी तरक्की करना"
   },
@@ -338,6 +412,8 @@
     "actual_meaning": "To do a very difficult task",
     "story_hindi": "संस्कृत का निबंध याद करना मेरे लिए कैसा था?",
     "story_english": "Memorizing the Sanskrit essay was like what for me?",
+    "origin_hindi": "लोहे के चने चबाना नामुमकिन और दर्दनाक है। किसी बहुत कठिन चुनौती का सामना करना 'लोहे के चने चबाना' कहलाता है।",
+    "origin_english": "Chewing iron chickpeas is impossible and painful, used metaphorically for enduring a very tough challenge.",
     "options": ["लोहे के चने चबाना", "पापड़ बेलना", "तारे तोड़ लाना", "हाथ पैर मारना"],
     "answer": "लोहे के चने चबाना"
   },
@@ -347,6 +423,8 @@
     "actual_meaning": "One who doesn't know the value of something good",
     "story_hindi": "मैंने उसे अपना पसंदीदा कैसेट दिया पर उसने उसे फेंक दिया। उसके लिए तो...",
     "story_english": "I gave him my favorite cassette tape but he threw it away. For him it's like...",
+    "origin_hindi": "अदरक औषधीय और स्वाद से भरपूर होती है, लेकिन एक बंदर के लिए वह केवल एक जड़ है। अज्ञानी व्यक्ति अच्छी चीज़ की कद्र नहीं कर पाता।",
+    "origin_english": "Ginger is valuable and flavorful, but a monkey sees it only as a root; implies that an ignorant person can't appreciate quality.",
     "options": ["बंदर क्या जाने अदरक का स्वाद", "ऊँट के मुँह में ज़ीरा", "आस्तीन का साँप", "राई का पहाड़"],
     "answer": "बंदर क्या जाने अदरक का स्वाद"
   },
@@ -356,6 +434,8 @@
     "actual_meaning": "Might is right",
     "story_hindi": "स्कूल का मॉनिटर अपनी मर्जी से किसी का भी नाम ब्लैकबोर्ड पर लिख देता था क्योंकि...",
     "story_english": "The class monitor would write anyone's name on the blackboard because...",
+    "origin_hindi": "जिसके पास शक्ति (लाठी) होती है, अधिकार (भैंस) भी उसी का होता है। यह समाज में बाहुबल की प्रधानता को दर्शाता है।",
+    "origin_english": "He who holds the stick (power) owns the buffalo (resources/authority). Reflects the concept of 'Might is Right'.",
     "options": ["जिसकी लाठी उसकी भैंस", "दाल में काला होना", "हाथ साफ़ करना", "हवा में उड़ना"],
     "answer": "जिसकी लाठी उसकी भैंस"
   },
@@ -365,6 +445,8 @@
     "actual_meaning": "Evidence needs no proof",
     "story_hindi": "तुमने कहा तुम सबसे तेज़ दौड़ते हो और रेस में सबको हरा दिया, यानी...",
     "story_english": "You claimed you run the fastest and defeated everyone in the race, which means...",
+    "origin_hindi": "हाथ में पहने कंगन को देखने के लिए आईने (आरसी) की ज़रूरत नहीं होती। प्रत्यक्ष को प्रमाण की आवश्यकता नहीं होती।",
+    "origin_english": "One doesn't need a mirror (arsi) to see a bangle worn on the hand; implies that obvious truths require no external evidence.",
     "options": ["हाथ कंगन को आरसी क्या", "ऊँट के मुँह में ज़ीरा", "घोड़े बेचकर सोना", "दाँत खट्टे करना"],
     "answer": "हाथ कंगन को आरसी क्या"
   },
@@ -374,6 +456,8 @@
     "actual_meaning": "Blaming circumstances for one's own incompetence",
     "story_hindi": "दोस्त वीडियो गेम हार गया और कहने लगा 'तेरा कंट्रोलर खराब है'!",
     "story_english": "Friend lost the video game and claimed 'Your controller is broken'!",
+    "origin_hindi": "जब किसी को नाचना नहीं आता, तो वह अपनी कमी छुपाने के लिए कहता है कि 'आँगन ही टेढ़ा है'। अपनी गलती दूसरों पर थोपना।",
+    "origin_english": "If someone can't dance, they blame the floor's unevenness instead of their lack of skill; used for blaming tools or conditions.",
     "options": ["नाच न जाने आँगन टेढ़ा", "राई का पहाड़ बनाना", "बंदर क्या जाने अदरक का स्वाद", "घी के दीये जलाना"],
     "answer": "नाच न जाने आँगन टेढ़ा"
   },
@@ -383,6 +467,8 @@
     "actual_meaning": "Single thing, many demanders",
     "story_hindi": "कैंटीन में सिर्फ एक समोसा बचा था और पांच लड़के उसे मांग रहे थे।",
     "story_english": "Only one samosa was left in the canteen and five boys were fighting for it.",
+    "origin_hindi": "एक ही अनार है और उसे पाने वाले बहुत सारे लोग। जब मांग ज़्यादा और आपूर्ति बहुत कम हो।",
+    "origin_english": "A single pomegranate (anar) but a hundred people wanting it; used when supply is far less than the demand.",
     "options": ["एक अनार सौ बीमार", "ऊँट के मुँह में ज़ीरा", "आसमान से गिरा", "दाल में काला होना"],
     "answer": "एक अनार सौ बीमार"
   },
@@ -392,6 +478,8 @@
     "actual_meaning": "Completely illiterate",
     "story_hindi": "जब तुम्हारे दादाजी ने नया स्मार्टफोन देखा और बोले 'मुझे कुछ समझ नहीं आता, मेरे लिए तो...'",
     "story_english": "When your grandpa saw a new smartphone and said 'I don't understand this, for me it is...'",
+    "origin_hindi": "अनपढ़ व्यक्ति के लिए अक्षर केवल काले धब्बे होते हैं, जैसे एक भैंस। उसे अक्षरों का ज्ञान बिल्कुल नहीं होता।",
+    "origin_english": "For an illiterate person, written letters are just black shapes as meaningless as a buffalo.",
     "options": ["काला अक्षर भैंस बराबर", "नाच न जाने आँगन टेढ़ा", "लोहे के चने चबाना", "आँखें खुलना"],
     "answer": "काला अक्षर भैंस बराबर"
   },
@@ -401,6 +489,8 @@
     "actual_meaning": "To avoid being seen",
     "story_hindi": "तुमने होमवर्क नहीं किया था, इसलिए तुम टीचर से पूरे दिन क्या करते रहे?",
     "story_english": "You hadn't done your homework, so what were you trying to do to avoid the teacher?",
+    "origin_hindi": "नज़रों में आने से बचना। जब हम किसी से शर्मिंदा हों या किसी का सामना न करना चाहें, तो हम अपनी आँखें चुराते हैं।",
+    "origin_english": "Avoiding eye contact or visibility. Used when one is ashamed or wants to evade a confrontation.",
     "options": ["आँख बचाना", "आँखें बिछाना", "मुँह छिपाना", "मुँह फुलाना"],
     "answer": "आँख बचाना"
   },
@@ -410,6 +500,8 @@
     "actual_meaning": "To feel ashamed / hide out of shame",
     "story_hindi": "जब तुम स्टेज पर पोयम भूल गए, तो पर्दे के पीछे भागकर तुमने...",
     "story_english": "When you forgot the poem on stage, you ran behind the curtains and started...",
+    "origin_hindi": "शर्मिंदगी के मारे चेहरा दिखाने की हिम्मत न होना। लज्जित महसूस करना।",
+    "origin_english": "Being too ashamed to show one's face; feeling humiliated by a failure or mistake.",
     "options": ["मुँह छिपाना", "मुँह ताकना", "मुँह फुलाना", "मुँह की खाना"],
     "answer": "मुँह छिपाना"
   },
@@ -419,6 +511,8 @@
     "actual_meaning": "To suffer a humiliating defeat",
     "story_hindi": "पड़ोस की टीम बहुत अकड़ रही थी, पर मैच में उन्होंने बुरी तरह से...",
     "story_english": "The neighborhood team was very arrogant, but in the match they completely...",
+    "origin_hindi": "बुरी तरह हारना। जब कोई घमंड में हो और उसे अपमानजनक हार का सामना करना पड़े।",
+    "origin_english": "To face a crushing and embarrassing defeat, often after being boastful.",
     "options": ["मुँह की खाना", "दाँत खट्टे करना", "हवा में तीर मारना", "रायता फैलाना"],
     "answer": "मुँह की खाना"
   },
@@ -428,6 +522,8 @@
     "actual_meaning": "To pay absolutely no heed",
     "story_hindi": "मम्मी ने तुम्हें 10 बार कहा कि कमरा साफ़ करो, पर तुम्हारे...",
     "story_english": "Mummy told you 10 times to clean your room, but you paid no attention at all.",
+    "origin_hindi": "जूँ का रेंगना खुजली पैदा करता है जिसे नज़रअंदाज़ नहीं किया जा सकता। लेकिन अगर कान पर जूँ रेंगने का भी असर न हो, तो वह परम लापरवाही है।",
+    "origin_english": "A crawling louse causes an itch that can't be ignored; if even that doesn't bother someone, it implies absolute indifference.",
     "options": ["कान पर जूँ न रेंगना", "कान भरना", "आसमान सिर पर उठाना", "हाथ पर हाथ धरे बैठना"],
     "answer": "कान पर जूँ न रेंगना"
   },
@@ -437,6 +533,8 @@
     "actual_meaning": "Misfortune at the very beginning of a task",
     "story_hindi": "तुमने नई शर्ट पहली बार पहनी और बाहर निकलते ही उस पर एक पक्षी ने बीट कर दी!",
     "story_english": "You wore a new shirt for the first time and a bird pooped on it right when you stepped out!",
+    "origin_hindi": "जब कोई सिर मुंडाए और तुरंत ओले (Hails) गिरने लगें, तो वह बहुत दर्दनाक और अशुभ होता है। काम शुरू करते ही मुसीबत आना।",
+    "origin_english": "If it starts hailing right after someone shaves their head, it's painful and unfortunate; symbolizes bad luck at the start.",
     "options": ["सिर मुंडाते ही ओले पड़ना", "आसमान से गिरा खजूर में अटका", "दाल में काला होना", "घाव पर नमक छिड़कना"],
     "answer": "सिर मुंडाते ही ओले पड़ना"
   },
@@ -446,6 +544,8 @@
     "actual_meaning": "To destroy completely",
     "story_hindi": "सुपरहीरो मूवी में हीरो ने विलेन के पूरे अड्डे की...",
     "story_english": "In the superhero movie, the hero completely destroyed the villain's hideout by...",
+    "origin_hindi": "किसी इमारत को इस तरह नष्ट करना कि उसकी एक भी ईंट सलामत न रहे। भारी विनाश का प्रतीक।",
+    "origin_english": "To destroy a structure so thoroughly that even the bricks are crushed; a symbol of total destruction.",
     "options": ["ईंट से ईंट बजाना", "राई का पहाड़ बनाना", "रायता फैलाना", "आग बबूला होना"],
     "answer": "ईंट से ईंट बजाना"
   }
